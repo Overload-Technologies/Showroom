@@ -17,12 +17,15 @@ function FPSController:OnAwake()
     self.defaultRotation = self.body:GetTransform():GetRotation()
 end
 
-function FPSController:OnStart()
+function FPSController:OnEnable()
     if self.mouseLocked then
         Inputs.LockMouse()
     end
 end
 
+function FPSController:OnDisable()
+    Inputs.UnlockMouse()
+end
 
 function FPSController:OnUpdate(deltaTime)
     -- Toggle mouse lock with Left ALT key

@@ -54,10 +54,6 @@ function SponzaExplorer:OnAwake()
     self.cameraFade:GetMaterialRenderer():SetUserMatrixElement(0, 0, 0.0)
 end
 
-function SponzaExplorer:OnEnable()
-    Inputs.LockMouse()
-end
-
 function SponzaExplorer:OnUpdate(deltaTime)
     destPosition    = self.destPositions[self.destionationIndex]
     destRotation    = self.destRotations[self.destionationIndex]

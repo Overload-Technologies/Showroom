@@ -16,7 +16,7 @@
                                 <y>0.99999541</y>
                                 <z>0.99998999</z>
                             </color>
-                            <intensity>3</intensity>
+                            <intensity>5</intensity>
                             <cast_shadows>true</cast_shadows>
                             <shadow_area_size>50</shadow_area_size>
                             <shadow_follow_camera>false</shadow_follow_camera>
@@ -55,10 +55,6 @@
                 <parent>24</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CAudioListener</type>
-                        <data/>
-                    </component>
-                    <component>
                         <type>class OvCore::ECS::Components::CCamera</type>
                         <data>
                             <fov>50</fov>
@@ -74,6 +70,10 @@
                             <frustum_light_culling>true</frustum_light_culling>
                             <projection_mode>1</projection_mode>
                         </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CAudioListener</type>
+                        <data/>
                     </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
@@ -112,6 +112,19 @@
                 <parent>0</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CModelRenderer</type>
+                        <data>
+                            <model>1_Sponza\Models\sponza.obj</model>
+                            <frustum_behaviour>1</frustum_behaviour>
+                            <custom_bounding_sphere_position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </custom_bounding_sphere_position>
+                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CMaterialRenderer</type>
                         <data>
                             <materials>
@@ -142,19 +155,6 @@
                                 <material>1_Sponza\Materials\vase.ovmat</material>
                                 <material>1_Sponza\Materials\roof.ovmat</material>
                             </materials>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CModelRenderer</type>
-                        <data>
-                            <model>1_Sponza\Models\sponza.obj</model>
-                            <frustum_behaviour>1</frustum_behaviour>
-                            <custom_bounding_sphere_position>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </custom_bounding_sphere_position>
-                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
                         </data>
                     </component>
                     <component>
@@ -462,6 +462,19 @@
                 <parent>14</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CAudioSource</type>
+                        <data>
+                            <autoplay>true</autoplay>
+                            <spatial>true</spatial>
+                            <volume>0.2</volume>
+                            <pan>0</pan>
+                            <looped>true</looped>
+                            <pitch>1</pitch>
+                            <attenuation_threshold>0</attenuation_threshold>
+                            <audio_clip>1_Sponza\Sounds\Vase_Particles.ogg</audio_clip>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
                             <color>
@@ -473,19 +486,6 @@
                             <constant>0</constant>
                             <linear>0</linear>
                             <quadratic>1</quadratic>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CAudioSource</type>
-                        <data>
-                            <autoplay>true</autoplay>
-                            <spatial>true</spatial>
-                            <volume>0.2</volume>
-                            <pan>0</pan>
-                            <looped>true</looped>
-                            <pitch>1</pitch>
-                            <attenuation_threshold>0</attenuation_threshold>
-                            <audio_clip>1_Sponza\Sounds\Vase_Particles.ogg</audio_clip>
                         </data>
                     </component>
                     <component>
@@ -520,6 +520,19 @@
                 <parent>14</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CAudioSource</type>
+                        <data>
+                            <autoplay>true</autoplay>
+                            <spatial>true</spatial>
+                            <volume>0.2</volume>
+                            <pan>0</pan>
+                            <looped>true</looped>
+                            <pitch>1</pitch>
+                            <attenuation_threshold>0</attenuation_threshold>
+                            <audio_clip>1_Sponza\Sounds\Vase_Particles.ogg</audio_clip>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
                             <color>
@@ -531,19 +544,6 @@
                             <constant>0</constant>
                             <linear>0</linear>
                             <quadratic>1</quadratic>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CAudioSource</type>
-                        <data>
-                            <autoplay>true</autoplay>
-                            <spatial>true</spatial>
-                            <volume>0.2</volume>
-                            <pan>0</pan>
-                            <looped>true</looped>
-                            <pitch>1</pitch>
-                            <attenuation_threshold>0</attenuation_threshold>
-                            <audio_clip>1_Sponza\Sounds\Vase_Particles.ogg</audio_clip>
                         </data>
                     </component>
                     <component>
@@ -578,6 +578,19 @@
                 <parent>14</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CAudioSource</type>
+                        <data>
+                            <autoplay>true</autoplay>
+                            <spatial>true</spatial>
+                            <volume>0.2</volume>
+                            <pan>0</pan>
+                            <looped>true</looped>
+                            <pitch>1</pitch>
+                            <attenuation_threshold>0</attenuation_threshold>
+                            <audio_clip>1_Sponza\Sounds\Vase_Particles.ogg</audio_clip>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
                             <color>
@@ -589,19 +602,6 @@
                             <constant>0</constant>
                             <linear>0</linear>
                             <quadratic>1</quadratic>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CAudioSource</type>
-                        <data>
-                            <autoplay>true</autoplay>
-                            <spatial>true</spatial>
-                            <volume>0.2</volume>
-                            <pan>0</pan>
-                            <looped>true</looped>
-                            <pitch>1</pitch>
-                            <attenuation_threshold>0</attenuation_threshold>
-                            <audio_clip>1_Sponza\Sounds\Vase_Particles.ogg</audio_clip>
                         </data>
                     </component>
                     <component>
@@ -636,6 +636,19 @@
                 <parent>14</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CAudioSource</type>
+                        <data>
+                            <autoplay>true</autoplay>
+                            <spatial>true</spatial>
+                            <volume>0.2</volume>
+                            <pan>0</pan>
+                            <looped>true</looped>
+                            <pitch>1</pitch>
+                            <attenuation_threshold>0</attenuation_threshold>
+                            <audio_clip>1_Sponza\Sounds\Vase_Particles.ogg</audio_clip>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CPointLight</type>
                         <data>
                             <color>
@@ -647,19 +660,6 @@
                             <constant>0</constant>
                             <linear>0</linear>
                             <quadratic>1</quadratic>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CAudioSource</type>
-                        <data>
-                            <autoplay>true</autoplay>
-                            <spatial>true</spatial>
-                            <volume>0.2</volume>
-                            <pan>0</pan>
-                            <looped>true</looped>
-                            <pitch>1</pitch>
-                            <attenuation_threshold>0</attenuation_threshold>
-                            <audio_clip>1_Sponza\Sounds\Vase_Particles.ogg</audio_clip>
                         </data>
                     </component>
                     <component>
@@ -694,14 +694,6 @@
                 <parent>15</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>1_Sponza\Materials\FX\VaseParticles.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
-                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>:Models\Cube.fbx</model>
@@ -712,6 +704,14 @@
                                 <z>34.75</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>40</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>1_Sponza\Materials\FX\VaseParticles.ovmat</material>
+                            </materials>
                         </data>
                     </component>
                     <component>
@@ -746,6 +746,14 @@
                 <parent>16</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>1_Sponza\Materials\FX\VaseParticles.ovmat</material>
+                            </materials>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>:Models\Cube.fbx</model>
@@ -756,14 +764,6 @@
                                 <z>39.150002</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>40</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>1_Sponza\Materials\FX\VaseParticles.ovmat</material>
-                            </materials>
                         </data>
                     </component>
                     <component>
@@ -798,14 +798,6 @@
                 <parent>17</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>1_Sponza\Materials\FX\VaseParticles.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
-                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>:Models\Cube.fbx</model>
@@ -816,6 +808,14 @@
                                 <z>36.299999</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>40</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>1_Sponza\Materials\FX\VaseParticles.ovmat</material>
+                            </materials>
                         </data>
                     </component>
                     <component>
@@ -850,14 +850,6 @@
                 <parent>18</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>1_Sponza\Materials\FX\VaseParticles.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
-                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>:Models\Cube.fbx</model>
@@ -868,6 +860,14 @@
                                 <z>32.700001</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>40</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>1_Sponza\Materials\FX\VaseParticles.ovmat</material>
+                            </materials>
                         </data>
                     </component>
                     <component>
@@ -1690,6 +1690,25 @@
                 <parent>41</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials/>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CModelRenderer</type>
+                        <data>
+                            <model>?</model>
+                            <frustum_behaviour>1</frustum_behaviour>
+                            <custom_bounding_sphere_position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </custom_bounding_sphere_position>
+                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CPhysicalSphere</type>
                         <data>
                             <is_trigger>true</is_trigger>
@@ -1709,25 +1728,6 @@
                             </angular_factor>
                             <collision_mode>0</collision_mode>
                             <radius>0.40000001</radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CModelRenderer</type>
-                        <data>
-                            <model>?</model>
-                            <frustum_behaviour>1</frustum_behaviour>
-                            <custom_bounding_sphere_position>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </custom_bounding_sphere_position>
-                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials/>
                         </data>
                     </component>
                     <component>
@@ -1912,6 +1912,14 @@
                 <parent>39</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>1_Sponza\Materials\FX\TeleportParticles.ovmat</material>
+                            </materials>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>:Models\Cube.fbx</model>
@@ -1922,14 +1930,6 @@
                                 <z>38.5</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>40</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>1_Sponza\Materials\FX\TeleportParticles.ovmat</material>
-                            </materials>
                         </data>
                     </component>
                     <component>
@@ -2009,25 +2009,6 @@
                 <parent>41</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials/>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CModelRenderer</type>
-                        <data>
-                            <model>?</model>
-                            <frustum_behaviour>1</frustum_behaviour>
-                            <custom_bounding_sphere_position>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </custom_bounding_sphere_position>
-                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
                         <type>class OvCore::ECS::Components::CPhysicalSphere</type>
                         <data>
                             <is_trigger>true</is_trigger>
@@ -2047,6 +2028,25 @@
                             </angular_factor>
                             <collision_mode>0</collision_mode>
                             <radius>0.40000001</radius>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CModelRenderer</type>
+                        <data>
+                            <model>?</model>
+                            <frustum_behaviour>1</frustum_behaviour>
+                            <custom_bounding_sphere_position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </custom_bounding_sphere_position>
+                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials/>
                         </data>
                     </component>
                     <component>
@@ -2086,14 +2086,6 @@
                 <parent>46</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>1_Sponza\Materials\FX\TeleportParticles.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
-                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>:Models\Cube.fbx</model>
@@ -2104,6 +2096,14 @@
                                 <z>35.650002</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>37.200001</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>1_Sponza\Materials\FX\TeleportParticles.ovmat</material>
+                            </materials>
                         </data>
                     </component>
                     <component>
@@ -2276,10 +2276,6 @@
                 <parent>0</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CAudioListener</type>
-                        <data/>
-                    </component>
-                    <component>
                         <type>class OvCore::ECS::Components::CCamera</type>
                         <data>
                             <fov>55</fov>
@@ -2295,6 +2291,10 @@
                             <frustum_light_culling>true</frustum_light_culling>
                             <projection_mode>1</projection_mode>
                         </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CAudioListener</type>
+                        <data/>
                     </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
@@ -2377,6 +2377,14 @@
                 <parent>99</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>1_Sponza\Materials\FX\CameraFade.ovmat</material>
+                            </materials>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>:Models\Cube.fbx</model>
@@ -2387,14 +2395,6 @@
                                 <z>0</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>1_Sponza\Materials\FX\CameraFade.ovmat</material>
-                            </materials>
                         </data>
                     </component>
                     <component>
@@ -2551,9 +2551,9 @@
                         <type>class OvCore::ECS::Components::CAmbientBoxLight</type>
                         <data>
                             <color>
-                                <x>0.92941177</x>
-                                <y>0.91183889</y>
-                                <z>0.76539797</z>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
                             </color>
                             <intensity>0.0099999998</intensity>
                             <size>
@@ -2598,14 +2598,14 @@
                         <type>class OvCore::ECS::Components::CPostProcessStack</type>
                         <data>
                             <bloom_enabled>true</bloom_enabled>
-                            <bloom_threshold>1</bloom_threshold>
+                            <bloom_threshold>4</bloom_threshold>
                             <bloom_radius>5</bloom_radius>
                             <bloom_kernel_size>6</bloom_kernel_size>
                             <bloom_intensity>0.60000002</bloom_intensity>
                             <auto_exposure_enabled>true</auto_exposure_enabled>
                             <auto_exposure_center_weight_bias>0.5</auto_exposure_center_weight_bias>
-                            <auto_exposure_luminance_min>-3</auto_exposure_luminance_min>
-                            <auto_exposure_luminance_max>10</auto_exposure_luminance_max>
+                            <auto_exposure_luminance_min>-2</auto_exposure_luminance_min>
+                            <auto_exposure_luminance_max>16</auto_exposure_luminance_max>
                             <auto_exposure_exposure_compensation>0</auto_exposure_exposure_compensation>
                             <auto_exposure_progressive>true</auto_exposure_progressive>
                             <auto_exposure_speed_up>1</auto_exposure_speed_up>
@@ -2685,6 +2685,14 @@
                 <parent>0</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>:Materials\Atmosphere.ovmat</material>
+                            </materials>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>:Models\Sphere.fbx</model>
@@ -2695,14 +2703,6 @@
                                 <z>0</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>:Materials\Atmosphere.ovmat</material>
-                            </materials>
                         </data>
                     </component>
                     <component>

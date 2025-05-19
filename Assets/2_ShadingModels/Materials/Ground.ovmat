@@ -1,6 +1,8 @@
 <root>
     <shader>:Shaders\Standard.ovfx</shader>
     <settings>
+        <support_orthographic>true</support_orthographic>
+        <support_perspective>true</support_perspective>
         <blendable>false</blendable>
         <backface_culling>true</backface_culling>
         <frontface_culling>false</frontface_culling>
@@ -9,16 +11,11 @@
         <color_writing>true</color_writing>
         <cast_shadows>false</cast_shadows>
         <receive_shadows>true</receive_shadows>
+        <user_interface>false</user_interface>
         <gpu_instances>1</gpu_instances>
+        <draw_order>1000</draw_order>
     </settings>
     <uniforms>
-        <uniform>
-            <name>_LightSpaceMatrix</name>
-        </uniform>
-        <uniform>
-            <name>_ShadowMap</name>
-            <value>?</value>
-        </uniform>
         <uniform>
             <name>u_Albedo</name>
             <value>
@@ -37,18 +34,6 @@
             <value>?</value>
         </uniform>
         <uniform>
-            <name>u_EnableNormalMapping</name>
-            <value>0</value>
-        </uniform>
-        <uniform>
-            <name>u_HeightMap</name>
-            <value>?</value>
-        </uniform>
-        <uniform>
-            <name>u_HeightScale</name>
-            <value>0</value>
-        </uniform>
-        <uniform>
             <name>u_MaskMap</name>
             <value>?</value>
         </uniform>
@@ -58,10 +43,6 @@
         </uniform>
         <uniform>
             <name>u_MetallicMap</name>
-            <value>?</value>
-        </uniform>
-        <uniform>
-            <name>u_NormalMap</name>
             <value>?</value>
         </uniform>
         <uniform>
@@ -87,4 +68,5 @@
             </value>
         </uniform>
     </uniforms>
+    <features></features>
 </root>

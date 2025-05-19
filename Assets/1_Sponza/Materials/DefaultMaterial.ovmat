@@ -17,6 +17,13 @@
     </settings>
     <uniforms>
         <uniform>
+            <name>_LightSpaceMatrix</name>
+        </uniform>
+        <uniform>
+            <name>_ShadowMap</name>
+            <value>?</value>
+        </uniform>
+        <uniform>
             <name>u_Albedo</name>
             <value>
                 <x>1</x>

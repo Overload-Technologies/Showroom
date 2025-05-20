@@ -4,10 +4,10 @@
         <support_orthographic>true</support_orthographic>
         <support_perspective>true</support_perspective>
         <blendable>false</blendable>
-        <backface_culling>true</backface_culling>
+        <backface_culling>false</backface_culling>
         <frontface_culling>false</frontface_culling>
         <depth_test>true</depth_test>
-        <depth_writing>false</depth_writing>
+        <depth_writing>true</depth_writing>
         <color_writing>true</color_writing>
         <cast_shadows>true</cast_shadows>
         <receive_shadows>true</receive_shadows>
@@ -31,7 +31,7 @@
         </uniform>
         <uniform>
             <name>u_AlphaClippingThreshold</name>
-            <value>0.25</value>
+            <value>0.85000002</value>
         </uniform>
         <uniform>
             <name>u_AmbientOcclusionMap</name>

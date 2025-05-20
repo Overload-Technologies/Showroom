@@ -46,7 +46,7 @@
         </uniform>
         <uniform>
             <name>u_Metallic</name>
-            <value>1</value>
+            <value>0</value>
         </uniform>
         <uniform>
             <name>u_MetallicMap</name>

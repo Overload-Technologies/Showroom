@@ -92,5 +92,5 @@
             </value>
         </uniform>
     </uniforms>
-    <features>NORMAL_MAPPING,PARALLAX_MAPPING</features>
+    <features>PARALLAX_MAPPING,NORMAL_MAPPING</features>
 </root>

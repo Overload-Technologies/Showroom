@@ -1,10 +1,10 @@
-gravity=-9.810000
 executable_name=Showroom
+gravity=-9.810000
 x_resolution=1600
-y_resolution=900
 multisampling=true
-fullscreen=false
+y_resolution=900
 start_scene=1_Sponza\Sponza.ovscene
+fullscreen=false
 vsync=true
 samples=4
 opengl_major=4

@@ -57,7 +57,7 @@
                     <component>
                         <type>class OvCore::ECS::Components::CCamera</type>
                         <data>
-                            <fov>50</fov>
+                            <fov>60</fov>
                             <size>-1.0737418e+08</size>
                             <near>0.1</near>
                             <far>1000</far>
@@ -196,19 +196,19 @@
                                 <y>0.63025135</y>
                                 <z>0.26758936</z>
                             </color>
-                            <intensity>1</intensity>
-                            <constant>1</constant>
+                            <intensity>3</intensity>
+                            <constant>0</constant>
                             <linear>0</linear>
-                            <quadratic>0.5</quadratic>
+                            <quadratic>1</quadratic>
                         </data>
                     </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
                             <position>
-                                <x>4.8499999</x>
-                                <y>0</y>
-                                <z>0</z>
+                                <x>4.886745</x>
+                                <y>-0.14696133</y>
+                                <z>0.03673923</z>
                             </position>
                             <rotation>
                                 <x>0</x>
@@ -272,19 +272,19 @@
                                 <y>0.63025135</y>
                                 <z>0.26758936</z>
                             </color>
-                            <intensity>1</intensity>
-                            <constant>1</constant>
+                            <intensity>3</intensity>
+                            <constant>0</constant>
                             <linear>0</linear>
-                            <quadratic>0.40000001</quadratic>
+                            <quadratic>1</quadratic>
                         </data>
                     </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
                             <position>
-                                <x>-6.1999998</x>
-                                <y>0</y>
-                                <z>0</z>
+                                <x>-6.1894484</x>
+                                <y>-0.1994437</y>
+                                <z>0.031492233</z>
                             </position>
                             <rotation>
                                 <x>0</x>
@@ -305,7 +305,7 @@
             <actor>
                 <name>Center Right Light</name>
                 <tag></tag>
-                <active>true</active>
+                <active>false</active>
                 <id>11</id>
                 <parent>51</parent>
                 <components>
@@ -348,19 +348,19 @@
                                 <y>0.63025135</y>
                                 <z>0.26758936</z>
                             </color>
-                            <intensity>1</intensity>
-                            <constant>1</constant>
+                            <intensity>2</intensity>
+                            <constant>0</constant>
                             <linear>0</linear>
-                            <quadratic>0.40000001</quadratic>
+                            <quadratic>1</quadratic>
                         </data>
                     </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
                             <position>
-                                <x>4.8499999</x>
-                                <y>0</y>
-                                <z>0</z>
+                                <x>4.8719344</x>
+                                <y>-0.19063759</y>
+                                <z>0.020992041</z>
                             </position>
                             <rotation>
                                 <x>0</x>
@@ -393,18 +393,18 @@
                                 <y>0.63025135</y>
                                 <z>0.26758936</z>
                             </color>
-                            <intensity>1</intensity>
-                            <constant>1</constant>
+                            <intensity>2</intensity>
+                            <constant>0</constant>
                             <linear>0</linear>
-                            <quadratic>0.40000001</quadratic>
+                            <quadratic>1</quadratic>
                         </data>
                     </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
                             <position>
-                                <x>-6.1999998</x>
-                                <y>0</y>
+                                <x>-6.1896033</x>
+                                <y>-0.20076036</y>
                                 <z>0</z>
                             </position>
                             <rotation>
@@ -424,7 +424,7 @@
                 <behaviours/>
             </actor>
             <actor>
-                <name>Borders Light</name>
+                <name>Vase Lights</name>
                 <tag></tag>
                 <active>true</active>
                 <id>14</id>
@@ -598,7 +598,7 @@
                                 <y>0.89803922</y>
                                 <z>1</z>
                             </color>
-                            <intensity>1</intensity>
+                            <intensity>1.5</intensity>
                             <constant>0</constant>
                             <linear>0</linear>
                             <quadratic>1</quadratic>
@@ -656,7 +656,7 @@
                                 <y>0.8963024</y>
                                 <z>1</z>
                             </color>
-                            <intensity>1.365</intensity>
+                            <intensity>1</intensity>
                             <constant>0</constant>
                             <linear>0</linear>
                             <quadratic>1</quadratic>
@@ -2207,7 +2207,7 @@
                 <behaviours/>
             </actor>
             <actor>
-                <name>Globals</name>
+                <name>Global Lights</name>
                 <tag></tag>
                 <active>true</active>
                 <id>50</id>
@@ -2238,7 +2238,7 @@
                 <behaviours/>
             </actor>
             <actor>
-                <name>Bottom</name>
+                <name>Hanging Lights</name>
                 <tag></tag>
                 <active>true</active>
                 <id>51</id>
@@ -2278,7 +2278,7 @@
                     <component>
                         <type>class OvCore::ECS::Components::CCamera</type>
                         <data>
-                            <fov>55</fov>
+                            <fov>60</fov>
                             <size>-1.0737418e+08</size>
                             <near>0.1</near>
                             <far>1000</far>
@@ -2551,11 +2551,11 @@
                         <type>class OvCore::ECS::Components::CAmbientBoxLight</type>
                         <data>
                             <color>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
+                                <x>0.88395345</x>
+                                <y>0.89019608</y>
+                                <z>0.35956937</z>
                             </color>
-                            <intensity>0.0099999998</intensity>
+                            <intensity>0.0049999999</intensity>
                             <size>
                                 <x>100</x>
                                 <y>100</y>
@@ -2598,12 +2598,10 @@
                         <type>class OvCore::ECS::Components::CPostProcessStack</type>
                         <data>
                             <bloom_enabled>true</bloom_enabled>
-                            <bloom_threshold>4</bloom_threshold>
-                            <bloom_radius>5</bloom_radius>
-                            <bloom_kernel_size>6</bloom_kernel_size>
-                            <bloom_intensity>0.60000002</bloom_intensity>
+                            <bloom_intensity>0.80000001</bloom_intensity>
+                            <bloom_passes>8</bloom_passes>
                             <auto_exposure_enabled>true</auto_exposure_enabled>
-                            <auto_exposure_center_weight_bias>0.5</auto_exposure_center_weight_bias>
+                            <auto_exposure_center_weight_bias>0.60000002</auto_exposure_center_weight_bias>
                             <auto_exposure_luminance_min>-2</auto_exposure_luminance_min>
                             <auto_exposure_luminance_max>16</auto_exposure_luminance_max>
                             <auto_exposure_exposure_compensation>0</auto_exposure_exposure_compensation>
@@ -2611,8 +2609,8 @@
                             <auto_exposure_speed_up>1</auto_exposure_speed_up>
                             <auto_exposure_speed_down>1</auto_exposure_speed_down>
                             <tonemapping_enabled>true</tonemapping_enabled>
-                            <tonemapping_exposure>1</tonemapping_exposure>
-                            <tonemapping_mode>0</tonemapping_mode>
+                            <tonemapping_exposure>0.64999998</tonemapping_exposure>
+                            <tonemapping_mode>5</tonemapping_mode>
                             <tonemapping_gamma_correction>true</tonemapping_gamma_correction>
                             <fxaa_enabled>true</fxaa_enabled>
                         </data>

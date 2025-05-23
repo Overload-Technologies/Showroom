@@ -20,8 +20,8 @@
             <name>u_Diffuse</name>
             <value>
                 <x>0.21176469</x>
-                <y>1</y>
-                <z>0.99061626</z>
+                <y>5</y>
+                <z>5</z>
                 <w>1</w>
             </value>
         </uniform>

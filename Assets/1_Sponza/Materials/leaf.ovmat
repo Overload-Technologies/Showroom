@@ -34,8 +34,20 @@
             <value>0.85000002</value>
         </uniform>
         <uniform>
+            <name>u_AlphaDithering</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
             <name>u_AmbientOcclusionMap</name>
             <value>?</value>
+        </uniform>
+        <uniform>
+            <name>u_BuiltInGammaCorrection</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_BuiltInToneMapping</name>
+            <value>0</value>
         </uniform>
         <uniform>
             <name>u_MaskMap</name>
@@ -48,10 +60,6 @@
         <uniform>
             <name>u_MetallicMap</name>
             <value>?</value>
-        </uniform>
-        <uniform>
-            <name>u_NormalMap</name>
-            <value>1_Sponza\Textures\Normals\sponza_thorn_ddn.tga</value>
         </uniform>
         <uniform>
             <name>u_Roughness</name>

@@ -30,8 +30,24 @@
             <value>4_Materials\Textures\Moss002_1K-JPG_Color.jpg</value>
         </uniform>
         <uniform>
+            <name>u_AlphaClippingThreshold</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_AlphaDithering</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
             <name>u_AmbientOcclusionMap</name>
             <value>4_Materials\Textures\Moss002_1K-JPG_AmbientOcclusion.jpg</value>
+        </uniform>
+        <uniform>
+            <name>u_BuiltInGammaCorrection</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_BuiltInToneMapping</name>
+            <value>0</value>
         </uniform>
         <uniform>
             <name>u_HeightMap</name>
@@ -92,5 +108,5 @@
             </value>
         </uniform>
     </uniforms>
-    <features>PARALLAX_MAPPING,NORMAL_MAPPING</features>
+    <features>NORMAL_MAPPING,PARALLAX_MAPPING</features>
 </root>

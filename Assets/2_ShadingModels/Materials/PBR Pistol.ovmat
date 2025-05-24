@@ -1,6 +1,8 @@
 <root>
-    <shader>:Shaders\StandardPBR.ovfx</shader>
+    <shader>:Shaders\Standard.ovfx</shader>
     <settings>
+        <support_orthographic>true</support_orthographic>
+        <support_perspective>true</support_perspective>
         <blendable>false</blendable>
         <backface_culling>true</backface_culling>
         <frontface_culling>false</frontface_culling>
@@ -9,7 +11,9 @@
         <color_writing>true</color_writing>
         <cast_shadows>true</cast_shadows>
         <receive_shadows>false</receive_shadows>
+        <user_interface>false</user_interface>
         <gpu_instances>1</gpu_instances>
+        <draw_order>1000</draw_order>
     </settings>
     <uniforms>
         <uniform>
@@ -33,19 +37,23 @@
             <value>2_ShadingModels\Textures\base_albedo.jpg</value>
         </uniform>
         <uniform>
+            <name>u_AlphaClippingThreshold</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_AlphaDithering</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
             <name>u_AmbientOcclusionMap</name>
             <value>2_ShadingModels\Textures\base_AO.jpg</value>
         </uniform>
         <uniform>
-            <name>u_EnableNormalMapping</name>
-            <value>1</value>
+            <name>u_BuiltInGammaCorrection</name>
+            <value>0</value>
         </uniform>
         <uniform>
-            <name>u_HeightMap</name>
-            <value>?</value>
-        </uniform>
-        <uniform>
-            <name>u_HeightScale</name>
+            <name>u_BuiltInToneMapping</name>
             <value>0</value>
         </uniform>
         <uniform>
@@ -87,4 +95,5 @@
             </value>
         </uniform>
     </uniforms>
+    <features>NORMAL_MAPPING</features>
 </root>

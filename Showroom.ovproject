@@ -1,0 +1,10 @@
+gravity=-9.810000
+executable_name=Showroom
+x_resolution=1600
+y_resolution=900
+multisampling=false
+fullscreen=false
+start_scene=1_Sponza\Sponza.ovscene
+vsync=true
+samples=4
+dev_build=false

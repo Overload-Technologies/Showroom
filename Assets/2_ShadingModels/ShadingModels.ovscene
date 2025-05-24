@@ -16,9 +16,9 @@
                                 <y>1</y>
                                 <z>1</z>
                             </color>
-                            <intensity>1</intensity>
+                            <intensity>3</intensity>
                             <cast_shadows>true</cast_shadows>
-                            <shadow_area_size>15</shadow_area_size>
+                            <shadow_area_size>10</shadow_area_size>
                             <shadow_follow_camera>false</shadow_follow_camera>
                             <shadow_map_resolution>16384</shadow_map_resolution>
                         </data>
@@ -62,7 +62,7 @@
                                 <y>0.99998999</y>
                                 <z>0.99998999</z>
                             </color>
-                            <intensity>0.25</intensity>
+                            <intensity>0.5</intensity>
                             <radius>10000</radius>
                         </data>
                     </component>
@@ -100,7 +100,7 @@
                     <component>
                         <type>class OvCore::ECS::Components::CCamera</type>
                         <data>
-                            <fov>45</fov>
+                            <fov>60</fov>
                             <size>6</size>
                             <near>0.1</near>
                             <far>1000</far>
@@ -118,15 +118,15 @@
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
                             <position>
-                                <x>-3.0989682e-07</x>
-                                <y>3.1800001</y>
-                                <z>14.22</z>
+                                <x>3.1018288e-07</x>
+                                <y>0</y>
+                                <z>7</z>
                             </position>
                             <rotation>
-                                <x>-7.5094583e-08</x>
-                                <y>0.99465787</y>
-                                <z>-0.10322659</z>
-                                <w>7.7933882e-09</w>
+                                <x>-7.5497901e-08</x>
+                                <y>1</y>
+                                <z>-7.5497901e-08</z>
+                                <w>-4.3711381e-08</w>
                             </rotation>
                             <scale>
                                 <x>1</x>
@@ -136,7 +136,12 @@
                         </data>
                     </component>
                 </components>
-                <behaviours/>
+                <behaviours>
+                    <behaviour>
+                        <type>WheelZoom</type>
+                        <data/>
+                    </behaviour>
+                </behaviours>
             </actor>
             <actor>
                 <name>PBR Pistol</name>
@@ -172,72 +177,19 @@
                         <data>
                             <position>
                                 <x>0</x>
-                                <y>-3.5999999</y>
-                                <z>0</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>2</x>
-                                <y>2</y>
-                                <z>2</z>
-                            </scale>
-                        </data>
-                    </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Blinn-Phong Pistol</name>
-                <tag></tag>
-                <active>true</active>
-                <id>17</id>
-                <parent>18</parent>
-                <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>:Materials\Default.ovmat</material>
-                                <material>2_ShadingModels\Materials\Blinn-Phong Pistol.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CModelRenderer</type>
-                        <data>
-                            <model>2_ShadingModels\Models\Pistol.obj</model>
-                            <frustum_behaviour>1</frustum_behaviour>
-                            <custom_bounding_sphere_position>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </custom_bounding_sphere_position>
-                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>0</x>
                                 <y>-1.2</y>
                                 <z>0</z>
                             </position>
                             <rotation>
                                 <x>0</x>
-                                <y>0</y>
+                                <y>1.4210856e-14</y>
                                 <z>0</z>
                                 <w>1</w>
                             </rotation>
                             <scale>
-                                <x>2</x>
+                                <x>1.9999998</x>
                                 <y>2</y>
-                                <z>2</z>
+                                <z>1.9999998</z>
                             </scale>
                         </data>
                     </component>
@@ -256,14 +208,14 @@
                         <data>
                             <position>
                                 <x>0</x>
-                                <y>0</y>
+                                <y>3</y>
                                 <z>0</z>
                             </position>
                             <rotation>
                                 <x>0</x>
-                                <y>0.70710677</y>
+                                <y>0.70710683</y>
                                 <z>0</z>
-                                <w>0.70710677</w>
+                                <w>0.70710671</w>
                             </rotation>
                             <scale>
                                 <x>1</x>
@@ -287,7 +239,7 @@
                         <data>
                             <position>
                                 <x>0</x>
-                                <y>0</y>
+                                <y>3.2</y>
                                 <z>0</z>
                             </position>
                             <rotation>
@@ -310,59 +262,6 @@
                         <data/>
                     </behaviour>
                 </behaviours>
-            </actor>
-            <actor>
-                <name>Lambert Pistol</name>
-                <tag></tag>
-                <active>true</active>
-                <id>20</id>
-                <parent>18</parent>
-                <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>:Materials\Default.ovmat</material>
-                                <material>2_ShadingModels\Materials\Lambert Pistol.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CModelRenderer</type>
-                        <data>
-                            <model>2_ShadingModels\Models\Pistol.obj</model>
-                            <frustum_behaviour>1</frustum_behaviour>
-                            <custom_bounding_sphere_position>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </custom_bounding_sphere_position>
-                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>0</x>
-                                <y>1.2</y>
-                                <z>0</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>2</x>
-                                <y>2</y>
-                                <z>2</z>
-                            </scale>
-                        </data>
-                    </component>
-                </components>
-                <behaviours/>
             </actor>
             <actor>
                 <name>Unlit Pistol</name>
@@ -398,19 +297,19 @@
                         <data>
                             <position>
                                 <x>0</x>
-                                <y>3.5999999</y>
+                                <y>1.2</y>
                                 <z>0</z>
                             </position>
                             <rotation>
                                 <x>0</x>
-                                <y>0</y>
+                                <y>1.4210856e-14</y>
                                 <z>0</z>
                                 <w>1</w>
                             </rotation>
                             <scale>
-                                <x>2</x>
+                                <x>1.9999998</x>
                                 <y>2</y>
-                                <z>2</z>
+                                <z>1.9999998</z>
                             </scale>
                         </data>
                     </component>
@@ -450,7 +349,7 @@
                         <data>
                             <position>
                                 <x>0</x>
-                                <y>-6</y>
+                                <y>0</y>
                                 <z>0</z>
                             </position>
                             <rotation>
@@ -480,10 +379,8 @@
                         <type>class OvCore::ECS::Components::CPostProcessStack</type>
                         <data>
                             <bloom_enabled>true</bloom_enabled>
-                            <bloom_threshold>0.80000001</bloom_threshold>
-                            <bloom_radius>5</bloom_radius>
-                            <bloom_kernel_size>6</bloom_kernel_size>
-                            <bloom_intensity>0.60000002</bloom_intensity>
+                            <bloom_intensity>0.2</bloom_intensity>
+                            <bloom_passes>10</bloom_passes>
                             <auto_exposure_enabled>true</auto_exposure_enabled>
                             <auto_exposure_center_weight_bias>0.5</auto_exposure_center_weight_bias>
                             <auto_exposure_luminance_min>-2</auto_exposure_luminance_min>
@@ -493,8 +390,8 @@
                             <auto_exposure_speed_up>1</auto_exposure_speed_up>
                             <auto_exposure_speed_down>1</auto_exposure_speed_down>
                             <tonemapping_enabled>true</tonemapping_enabled>
-                            <tonemapping_exposure>1</tonemapping_exposure>
-                            <tonemapping_mode>0</tonemapping_mode>
+                            <tonemapping_exposure>1.2</tonemapping_exposure>
+                            <tonemapping_mode>5</tonemapping_mode>
                             <tonemapping_gamma_correction>true</tonemapping_gamma_correction>
                             <fxaa_enabled>true</fxaa_enabled>
                         </data>
@@ -558,6 +455,58 @@
                         <data/>
                     </behaviour>
                 </behaviours>
+            </actor>
+            <actor>
+                <name>Atmosphere</name>
+                <tag></tag>
+                <active>true</active>
+                <id>25</id>
+                <parent>0</parent>
+                <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CModelRenderer</type>
+                        <data>
+                            <model>:Models\Sphere.fbx</model>
+                            <frustum_behaviour>0</frustum_behaviour>
+                            <custom_bounding_sphere_position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </custom_bounding_sphere_position>
+                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>:Materials\Atmosphere.ovmat</material>
+                            </materials>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                                <w>1</w>
+                            </rotation>
+                            <scale>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </scale>
+                        </data>
+                    </component>
+                </components>
+                <behaviours/>
             </actor>
         </actors>
     </scene>

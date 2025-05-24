@@ -2,11 +2,64 @@
     <scene>
         <actors>
             <actor>
-                <name>Directional Light</name>
+                <name>Main Camera</name>
                 <tag></tag>
                 <active>true</active>
                 <id>1</id>
-                <parent>15</parent>
+                <parent>16</parent>
+                <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CCamera</type>
+                        <data>
+                            <fov>70</fov>
+                            <size>5</size>
+                            <near>0.1</near>
+                            <far>1000</far>
+                            <clear_color>
+                                <x>0.1921569</x>
+                                <y>0.3019608</y>
+                                <z>0.47450981</z>
+                            </clear_color>
+                            <frustum_geometry_culling>true</frustum_geometry_culling>
+                            <frustum_light_culling>true</frustum_light_culling>
+                            <projection_mode>1</projection_mode>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>-8</x>
+                                <y>0</y>
+                                <z>7.9958266e-07</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>0.70710683</y>
+                                <z>0</z>
+                                <w>0.70710671</w>
+                            </rotation>
+                            <scale>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </scale>
+                        </data>
+                    </component>
+                </components>
+                <behaviours>
+                    <behaviour>
+                        <type>WheelZoom</type>
+                        <data/>
+                    </behaviour>
+                </behaviours>
+            </actor>
+            <actor>
+                <name>Directional Light</name>
+                <tag></tag>
+                <active>true</active>
+                <id>2</id>
+                <parent>0</parent>
                 <components>
                     <component>
                         <type>class OvCore::ECS::Components::CDirectionalLight</type>
@@ -16,30 +69,30 @@
                                 <y>1</y>
                                 <z>1</z>
                             </color>
-                            <intensity>6</intensity>
+                            <intensity>1</intensity>
                             <cast_shadows>true</cast_shadows>
-                            <shadow_area_size>30</shadow_area_size>
-                            <shadow_follow_camera>false</shadow_follow_camera>
-                            <shadow_map_resolution>16384</shadow_map_resolution>
+                            <shadow_area_size>50</shadow_area_size>
+                            <shadow_follow_camera>true</shadow_follow_camera>
+                            <shadow_map_resolution>8192</shadow_map_resolution>
                         </data>
                     </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
                             <position>
-                                <x>-0.19457068</x>
-                                <y>10.524288</y>
-                                <z>0.23188023</z>
+                                <x>0</x>
+                                <y>10</y>
+                                <z>0</z>
                             </position>
                             <rotation>
-                                <x>0.91286021</x>
-                                <y>-0.081148461</y>
-                                <z>0.33225435</z>
-                                <w>0.2229533</w>
+                                <x>0.81379771</x>
+                                <y>-0.17101006</y>
+                                <z>0.29619816</z>
+                                <w>0.46984628</w>
                             </rotation>
                             <scale>
-                                <x>0.99999994</x>
-                                <y>1.0000001</y>
+                                <x>1</x>
+                                <y>1</y>
                                 <z>1</z>
                             </scale>
                         </data>
@@ -51,18 +104,18 @@
                 <name>Ambient Light</name>
                 <tag></tag>
                 <active>true</active>
-                <id>2</id>
-                <parent>15</parent>
+                <id>3</id>
+                <parent>0</parent>
                 <components>
                     <component>
                         <type>class OvCore::ECS::Components::CAmbientSphereLight</type>
                         <data>
                             <color>
                                 <x>1</x>
-                                <y>0.99998999</y>
-                                <z>0.99998999</z>
+                                <y>1</y>
+                                <z>1</z>
                             </color>
-                            <intensity>0.0049999999</intensity>
+                            <intensity>0.029999999</intensity>
                             <radius>10000</radius>
                         </data>
                     </component>
@@ -91,37 +144,70 @@
                 <behaviours/>
             </actor>
             <actor>
-                <name>Main Camera</name>
+                <name>Atmoshpere</name>
                 <tag></tag>
                 <active>true</active>
-                <id>3</id>
-                <parent>14</parent>
+                <id>4</id>
+                <parent>0</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CCamera</type>
+                        <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
-                            <fov>45</fov>
-                            <size>5</size>
-                            <near>0.1</near>
-                            <far>100</far>
-                            <clear_color>
+                            <model>:Models\Sphere.fbx</model>
+                            <frustum_behaviour>0</frustum_behaviour>
+                            <custom_bounding_sphere_position>
                                 <x>0</x>
-                                <y>3.8891531e-07</y>
-                                <z>1e-06</z>
-                            </clear_color>
-                            <frustum_geometry_culling>false</frustum_geometry_culling>
-                            <frustum_light_culling>false</frustum_light_culling>
-                            <projection_mode>1</projection_mode>
+                                <y>0</y>
+                                <z>0</z>
+                            </custom_bounding_sphere_position>
+                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>:Materials\Atmosphere.ovmat</material>
+                            </materials>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                                <w>1</w>
+                            </rotation>
+                            <scale>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </scale>
+                        </data>
+                    </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Post Process Stack</name>
+                <tag></tag>
+                <active>true</active>
+                <id>5</id>
+                <parent>0</parent>
+                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CPostProcessStack</type>
                         <data>
                             <bloom_enabled>true</bloom_enabled>
-                            <bloom_threshold>3</bloom_threshold>
-                            <bloom_radius>5</bloom_radius>
-                            <bloom_kernel_size>6</bloom_kernel_size>
-                            <bloom_intensity>0.60000002</bloom_intensity>
+                            <bloom_intensity>1</bloom_intensity>
+                            <bloom_passes>6</bloom_passes>
                             <auto_exposure_enabled>true</auto_exposure_enabled>
                             <auto_exposure_center_weight_bias>0.5</auto_exposure_center_weight_bias>
                             <auto_exposure_luminance_min>-2</auto_exposure_luminance_min>
@@ -131,8 +217,8 @@
                             <auto_exposure_speed_up>1</auto_exposure_speed_up>
                             <auto_exposure_speed_down>1</auto_exposure_speed_down>
                             <tonemapping_enabled>true</tonemapping_enabled>
-                            <tonemapping_exposure>1</tonemapping_exposure>
-                            <tonemapping_mode>0</tonemapping_mode>
+                            <tonemapping_exposure>1.2</tonemapping_exposure>
+                            <tonemapping_mode>5</tonemapping_mode>
                             <tonemapping_gamma_correction>true</tonemapping_gamma_correction>
                             <fxaa_enabled>true</fxaa_enabled>
                         </data>
@@ -141,63 +227,7 @@
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
                             <position>
-                                <x>6.7090001</x>
-                                <y>3.484</y>
-                                <z>6.5938816</z>
-                            </position>
-                            <rotation>
-                                <x>-0.043753624</x>
-                                <y>0.93893689</y>
-                                <z>-0.13022155</z>
-                                <w>-0.31547648</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </scale>
-                        </data>
-                    </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Shader Ball A</name>
-                <tag></tag>
-                <active>true</active>
-                <id>4</id>
-                <parent>16</parent>
-                <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CModelRenderer</type>
-                        <data>
-                            <model>3_PBR\Models\Shader_Ball.fbx</model>
-                            <frustum_behaviour>1</frustum_behaviour>
-                            <custom_bounding_sphere_position>
                                 <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </custom_bounding_sphere_position>
-                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>3_PBR\Materials\ShaderBall_A.ovmat</material>
-                                <material>3_PBR\Materials\ShaderBall_A.ovmat</material>
-                                <material>3_PBR\Materials\ShaderBall_A.ovmat</material>
-                                <material>3_PBR\Materials\ShaderBall_A.ovmat</material>
-                                <material>3_PBR\Materials\ShaderBall_A.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>4.5</x>
                                 <y>0</y>
                                 <z>0</z>
                             </position>
@@ -218,72 +248,24 @@
                 <behaviours/>
             </actor>
             <actor>
-                <name>Shader Ball B</name>
-                <tag></tag>
-                <active>true</active>
-                <id>5</id>
-                <parent>16</parent>
-                <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>3_PBR\Materials\ShaderBall_B.ovmat</material>
-                                <material>3_PBR\Materials\ShaderBall_B.ovmat</material>
-                                <material>3_PBR\Materials\ShaderBall_B.ovmat</material>
-                                <material>3_PBR\Materials\ShaderBall_B.ovmat</material>
-                                <material>3_PBR\Materials\ShaderBall_B.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CModelRenderer</type>
-                        <data>
-                            <model>3_PBR\Models\Shader_Ball.fbx</model>
-                            <frustum_behaviour>1</frustum_behaviour>
-                            <custom_bounding_sphere_position>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </custom_bounding_sphere_position>
-                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>-4.5</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </scale>
-                        </data>
-                    </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Shader Ball C</name>
+                <name>Sphere</name>
                 <tag></tag>
                 <active>true</active>
                 <id>6</id>
-                <parent>16</parent>
+                <parent>15</parent>
                 <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>3_PBR\Materials\R05_M05.ovmat</material>
+                            </materials>
+                        </data>
+                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
-                            <model>3_PBR\Models\Shader_Ball.fbx</model>
+                            <model>:Models\Sphere.fbx</model>
                             <frustum_behaviour>1</frustum_behaviour>
                             <custom_bounding_sphere_position>
                                 <x>0</x>
@@ -294,23 +276,11 @@
                         </data>
                     </component>
                     <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>3_PBR\Materials\ShaderBall_C.ovmat</material>
-                                <material>3_PBR\Materials\ShaderBall_C.ovmat</material>
-                                <material>3_PBR\Materials\ShaderBall_C.ovmat</material>
-                                <material>3_PBR\Materials\ShaderBall_C.ovmat</material>
-                                <material>3_PBR\Materials\ShaderBall_C.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
-                    <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
                             <position>
-                                <x>-1.5</x>
-                                <y>0</y>
+                                <x>0</x>
+                                <y>2.2</y>
                                 <z>0</z>
                             </position>
                             <rotation>
@@ -330,28 +300,24 @@
                 <behaviours/>
             </actor>
             <actor>
-                <name>Shader Ball D</name>
+                <name>Sphere</name>
                 <tag></tag>
                 <active>true</active>
                 <id>7</id>
-                <parent>16</parent>
+                <parent>15</parent>
                 <components>
                     <component>
                         <type>class OvCore::ECS::Components::CMaterialRenderer</type>
                         <data>
                             <materials>
-                                <material>3_PBR\Materials\ShaderBall_D.ovmat</material>
-                                <material>3_PBR\Materials\ShaderBall_D.ovmat</material>
-                                <material>3_PBR\Materials\ShaderBall_D.ovmat</material>
-                                <material>3_PBR\Materials\ShaderBall_D.ovmat</material>
-                                <material>3_PBR\Materials\ShaderBall_D.ovmat</material>
+                                <material>3_PBR\Materials\R10_M10.ovmat</material>
                             </materials>
                         </data>
                     </component>
                     <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
-                            <model>3_PBR\Models\Shader_Ball.fbx</model>
+                            <model>:Models\Sphere.fbx</model>
                             <frustum_behaviour>1</frustum_behaviour>
                             <custom_bounding_sphere_position>
                                 <x>0</x>
@@ -365,9 +331,9 @@
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
                             <position>
-                                <x>1.5</x>
+                                <x>0</x>
                                 <y>0</y>
-                                <z>0</z>
+                                <z>2.2</z>
                             </position>
                             <rotation>
                                 <x>0</x>
@@ -386,196 +352,24 @@
                 <behaviours/>
             </actor>
             <actor>
-                <name>Point Light 1</name>
+                <name>Sphere</name>
                 <tag></tag>
                 <active>true</active>
                 <id>8</id>
                 <parent>15</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CPointLight</type>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
                         <data>
-                            <color>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </color>
-                            <intensity>5</intensity>
-                            <constant>0</constant>
-                            <linear>0</linear>
-                            <quadratic>1</quadratic>
+                            <materials>
+                                <material>3_PBR\Materials\R10_M00.ovmat</material>
+                            </materials>
                         </data>
                     </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>4.5</x>
-                                <y>2</y>
-                                <z>2.0221381</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </scale>
-                        </data>
-                    </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Point Light 2</name>
-                <tag></tag>
-                <active>true</active>
-                <id>9</id>
-                <parent>15</parent>
-                <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPointLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </color>
-                            <intensity>5</intensity>
-                            <constant>0</constant>
-                            <linear>0</linear>
-                            <quadratic>1</quadratic>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>1.5</x>
-                                <y>2</y>
-                                <z>2.0186791</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </scale>
-                        </data>
-                    </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Point Light 3</name>
-                <tag></tag>
-                <active>true</active>
-                <id>10</id>
-                <parent>15</parent>
-                <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPointLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </color>
-                            <intensity>5</intensity>
-                            <constant>0</constant>
-                            <linear>0</linear>
-                            <quadratic>1</quadratic>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>-1.5</x>
-                                <y>2</y>
-                                <z>2</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </scale>
-                        </data>
-                    </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Point Light 4</name>
-                <tag></tag>
-                <active>true</active>
-                <id>11</id>
-                <parent>15</parent>
-                <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPointLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </color>
-                            <intensity>5</intensity>
-                            <constant>0</constant>
-                            <linear>0</linear>
-                            <quadratic>1</quadratic>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>-4.5</x>
-                                <y>2</y>
-                                <z>2</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </scale>
-                        </data>
-                    </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Ground</name>
-                <tag></tag>
-                <active>true</active>
-                <id>12</id>
-                <parent>16</parent>
-                <components>
                     <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
-                            <model>:Models\Cube.fbx</model>
+                            <model>:Models\Sphere.fbx</model>
                             <frustum_behaviour>1</frustum_behaviour>
                             <custom_bounding_sphere_position>
                                 <x>0</x>
@@ -586,20 +380,12 @@
                         </data>
                     </component>
                     <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>3_PBR\Materials\Ground.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
-                    <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
                             <position>
                                 <x>0</x>
-                                <y>-0.46015167</y>
-                                <z>0</z>
+                                <y>0</y>
+                                <z>-2.2</z>
                             </position>
                             <rotation>
                                 <x>0</x>
@@ -608,9 +394,9 @@
                                 <w>1</w>
                             </rotation>
                             <scale>
-                                <x>20</x>
+                                <x>1</x>
                                 <y>1</y>
-                                <z>20</z>
+                                <z>1</z>
                             </scale>
                         </data>
                     </component>
@@ -618,19 +404,248 @@
                 <behaviours/>
             </actor>
             <actor>
-                <name>Scene Navigator</name>
+                <name>Sphere</name>
+                <tag></tag>
+                <active>true</active>
+                <id>9</id>
+                <parent>15</parent>
+                <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>3_PBR\Materials\R10_M05.ovmat</material>
+                            </materials>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CModelRenderer</type>
+                        <data>
+                            <model>:Models\Sphere.fbx</model>
+                            <frustum_behaviour>1</frustum_behaviour>
+                            <custom_bounding_sphere_position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </custom_bounding_sphere_position>
+                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                                <w>1</w>
+                            </rotation>
+                            <scale>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </scale>
+                        </data>
+                    </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Sphere</name>
+                <tag></tag>
+                <active>true</active>
+                <id>10</id>
+                <parent>15</parent>
+                <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>3_PBR\Materials\R05_M10.ovmat</material>
+                            </materials>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CModelRenderer</type>
+                        <data>
+                            <model>:Models\Sphere.fbx</model>
+                            <frustum_behaviour>1</frustum_behaviour>
+                            <custom_bounding_sphere_position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </custom_bounding_sphere_position>
+                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>0</x>
+                                <y>2.2</y>
+                                <z>2.2</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                                <w>1</w>
+                            </rotation>
+                            <scale>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </scale>
+                        </data>
+                    </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Sphere</name>
+                <tag></tag>
+                <active>true</active>
+                <id>11</id>
+                <parent>15</parent>
+                <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>3_PBR\Materials\R05_M00.ovmat</material>
+                            </materials>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CModelRenderer</type>
+                        <data>
+                            <model>:Models\Sphere.fbx</model>
+                            <frustum_behaviour>1</frustum_behaviour>
+                            <custom_bounding_sphere_position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </custom_bounding_sphere_position>
+                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>0</x>
+                                <y>2.2</y>
+                                <z>-2.2</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                                <w>1</w>
+                            </rotation>
+                            <scale>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </scale>
+                        </data>
+                    </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Sphere</name>
+                <tag></tag>
+                <active>true</active>
+                <id>12</id>
+                <parent>15</parent>
+                <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>3_PBR\Materials\R00_M05.ovmat</material>
+                            </materials>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CModelRenderer</type>
+                        <data>
+                            <model>:Models\Sphere.fbx</model>
+                            <frustum_behaviour>1</frustum_behaviour>
+                            <custom_bounding_sphere_position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </custom_bounding_sphere_position>
+                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>0</x>
+                                <y>4.4000001</y>
+                                <z>0</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                                <w>1</w>
+                            </rotation>
+                            <scale>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </scale>
+                        </data>
+                    </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Sphere</name>
                 <tag></tag>
                 <active>true</active>
                 <id>13</id>
-                <parent>0</parent>
+                <parent>15</parent>
                 <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>3_PBR\Materials\R00_M10.ovmat</material>
+                            </materials>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CModelRenderer</type>
+                        <data>
+                            <model>:Models\Sphere.fbx</model>
+                            <frustum_behaviour>1</frustum_behaviour>
+                            <custom_bounding_sphere_position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </custom_bounding_sphere_position>
+                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
                             <position>
                                 <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
+                                <y>4.4000001</y>
+                                <z>2.2</z>
                             </position>
                             <rotation>
                                 <x>0</x>
@@ -646,27 +661,43 @@
                         </data>
                     </component>
                 </components>
-                <behaviours>
-                    <behaviour>
-                        <type>SceneNavigator</type>
-                        <data/>
-                    </behaviour>
-                </behaviours>
+                <behaviours/>
             </actor>
             <actor>
-                <name>Camera Pivot</name>
+                <name>Sphere</name>
                 <tag></tag>
                 <active>true</active>
                 <id>14</id>
-                <parent>0</parent>
+                <parent>15</parent>
                 <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>3_PBR\Materials\R00_M00.ovmat</material>
+                            </materials>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CModelRenderer</type>
+                        <data>
+                            <model>:Models\Sphere.fbx</model>
+                            <frustum_behaviour>1</frustum_behaviour>
+                            <custom_bounding_sphere_position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </custom_bounding_sphere_position>
+                            <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
                             <position>
                                 <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
+                                <y>4.4000001</y>
+                                <z>-2.2</z>
                             </position>
                             <rotation>
                                 <x>0</x>
@@ -682,15 +713,10 @@
                         </data>
                     </component>
                 </components>
-                <behaviours>
-                    <behaviour>
-                        <type>OrbitalRotor</type>
-                        <data/>
-                    </behaviour>
-                </behaviours>
+                <behaviours/>
             </actor>
             <actor>
-                <name>Lights</name>
+                <name>Spheres</name>
                 <tag></tag>
                 <active>true</active>
                 <id>15</id>
@@ -721,10 +747,46 @@
                 <behaviours/>
             </actor>
             <actor>
-                <name>Environment</name>
+                <name>Camera Pivot</name>
                 <tag></tag>
                 <active>true</active>
                 <id>16</id>
+                <parent>0</parent>
+                <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>0</x>
+                                <y>2.2</y>
+                                <z>0</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                                <w>1</w>
+                            </rotation>
+                            <scale>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </scale>
+                        </data>
+                    </component>
+                </components>
+                <behaviours>
+                    <behaviour>
+                        <type>OrbitalRotor</type>
+                        <data/>
+                    </behaviour>
+                </behaviours>
+            </actor>
+            <actor>
+                <name>Scene Navigator</name>
+                <tag></tag>
+                <active>true</active>
+                <id>17</id>
                 <parent>0</parent>
                 <components>
                     <component>
@@ -749,7 +811,12 @@
                         </data>
                     </component>
                 </components>
-                <behaviours/>
+                <behaviours>
+                    <behaviour>
+                        <type>SceneNavigator</type>
+                        <data/>
+                    </behaviour>
+                </behaviours>
             </actor>
         </actors>
     </scene>

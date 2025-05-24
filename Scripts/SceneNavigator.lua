@@ -14,6 +14,10 @@ function Scene_Switcher:OnUpdate(deltaTime)
     if Inputs.GetKeyDown(Key.ALPHA_3) then
         Scenes.Load("3_PBR/PBR.ovscene")
     end
+
+    if Inputs.GetKeyDown(Key.ALPHA_4) then
+        Scenes.Load("4_Materials/Materials.ovscene")
+    end
 end
 
 return Scene_Switcher

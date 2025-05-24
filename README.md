@@ -12,7 +12,7 @@
 A simple project to showcase [Overload Engine](https://github.com/Overload-Technologies/Overload)'s features.
 
 # Content
-This project contains 3 scenes:
+This project contains 4 scenes:
 1. **Sponza:** A simple version of the iconic Sponza map, using Overload's standard material (blinn-phong lighting model).
 2. **Shading Models:** A scene with 2 pistols, showcasing the built-in surface shaders of Overload: `Standard`, and `Unlit`
 3. **PBR:** Collection of spheres with different PBR metallic and roughness settings.

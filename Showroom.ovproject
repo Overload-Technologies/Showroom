@@ -7,6 +7,4 @@ fullscreen=false
 start_scene=1_Sponza\Sponza.ovscene
 vsync=true
 samples=4
-opengl_major=4
-opengl_minor=3
 dev_build=false

@@ -599,15 +599,15 @@
                     <component>
                         <type>class OvCore::ECS::Components::CReflectionProbe</type>
                         <data>
-                            <refresh_mode>0</refresh_mode>
-                            <capture_speed>1</capture_speed>
+                            <refresh_mode>1</refresh_mode>
+                            <capture_speed>6</capture_speed>
                             <capture_position>
                                 <x>0</x>
                                 <y>0</y>
                                 <z>0</z>
                             </capture_position>
                             <brightness>1</brightness>
-                            <resolution>512</resolution>
+                            <resolution>1024</resolution>
                             <influence_policy>1</influence_policy>
                             <influence_size>
                                 <x>10</x>

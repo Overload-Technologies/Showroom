@@ -18,6 +18,10 @@ function Scene_Switcher:OnUpdate(deltaTime)
     if Inputs.GetKeyDown(Key.ALPHA_4) then
         Scenes.Load("4_Materials/Materials.ovscene")
     end
+
+    if Inputs.GetKeyDown(Key.ALPHA_5) then
+        Scenes.Load("5_Reflections/Reflections.ovscene")
+    end
 end
 
 return Scene_Switcher

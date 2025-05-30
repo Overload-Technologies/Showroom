@@ -29,7 +29,7 @@
         </uniform>
         <uniform>
             <name>u_AlbedoMap</name>
-            <value>4_Materials\Textures\Moss002_1K-JPG_Color.jpg</value>
+            <value>4_Materials\Textures\gold-scuffed_basecolor.png</value>
         </uniform>
         <uniform>
             <name>u_AlphaClippingThreshold</name>
@@ -41,7 +41,7 @@
         </uniform>
         <uniform>
             <name>u_AmbientOcclusionMap</name>
-            <value>4_Materials\Textures\Moss002_1K-JPG_AmbientOcclusion.jpg</value>
+            <value>?</value>
         </uniform>
         <uniform>
             <name>u_BuiltInGammaCorrection</name>
@@ -52,40 +52,20 @@
             <value>0</value>
         </uniform>
         <uniform>
-            <name>u_HeightMap</name>
-            <value>4_Materials\Textures\Moss002_1K-JPG_Displacement.jpg</value>
-        </uniform>
-        <uniform>
-            <name>u_HeightScale</name>
-            <value>0.059999999</value>
-        </uniform>
-        <uniform>
             <name>u_MaskMap</name>
             <value>?</value>
         </uniform>
         <uniform>
-            <name>u_MaxLayers</name>
-            <value>256</value>
-        </uniform>
-        <uniform>
             <name>u_Metallic</name>
-            <value>0</value>
+            <value>1</value>
         </uniform>
         <uniform>
             <name>u_MetallicMap</name>
-            <value>?</value>
-        </uniform>
-        <uniform>
-            <name>u_MinLayers</name>
-            <value>8</value>
+            <value>4_Materials\Textures\gold-scuffed_metallic.png</value>
         </uniform>
         <uniform>
             <name>u_NormalMap</name>
-            <value>4_Materials\Textures\Moss002_1K-JPG_NormalGL.jpg</value>
-        </uniform>
-        <uniform>
-            <name>u_ParallaxClipEdges</name>
-            <value>0</value>
+            <value>4_Materials\Textures\gold-scuffed_normal.png</value>
         </uniform>
         <uniform>
             <name>u_Roughness</name>
@@ -93,7 +73,7 @@
         </uniform>
         <uniform>
             <name>u_RoughnessMap</name>
-            <value>4_Materials\Textures\Moss002_1K-JPG_Roughness.jpg</value>
+            <value>4_Materials\Textures\gold-scuffed_roughness.png</value>
         </uniform>
         <uniform>
             <name>u_TextureOffset</name>
@@ -110,5 +90,5 @@
             </value>
         </uniform>
     </uniforms>
-    <features>PARALLAX_MAPPING,NORMAL_MAPPING</features>
+    <features>NORMAL_MAPPING</features>
 </root>

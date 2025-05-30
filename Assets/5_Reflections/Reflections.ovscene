@@ -216,8 +216,8 @@
                         <type>class OvCore::ECS::Components::CPostProcessStack</type>
                         <data>
                             <bloom_enabled>true</bloom_enabled>
-                            <bloom_intensity>1</bloom_intensity>
-                            <bloom_passes>6</bloom_passes>
+                            <bloom_intensity>0.60000002</bloom_intensity>
+                            <bloom_passes>10</bloom_passes>
                             <auto_exposure_enabled>true</auto_exposure_enabled>
                             <auto_exposure_center_weight_bias>0.5</auto_exposure_center_weight_bias>
                             <auto_exposure_luminance_min>-2</auto_exposure_luminance_min>
@@ -228,7 +228,7 @@
                             <auto_exposure_speed_down>1</auto_exposure_speed_down>
                             <tonemapping_enabled>true</tonemapping_enabled>
                             <tonemapping_exposure>1</tonemapping_exposure>
-                            <tonemapping_mode>0</tonemapping_mode>
+                            <tonemapping_mode>5</tonemapping_mode>
                             <tonemapping_gamma_correction>true</tonemapping_gamma_correction>
                             <fxaa_enabled>true</fxaa_enabled>
                         </data>

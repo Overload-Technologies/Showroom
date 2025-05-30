@@ -29,7 +29,7 @@
         </uniform>
         <uniform>
             <name>u_AlbedoMap</name>
-            <value>5_Reflections\Textures\Default_albedo.jpg</value>
+            <value>5_Reflections\Textures\Helmet_albedo.jpg</value>
         </uniform>
         <uniform>
             <name>u_AlphaClippingThreshold</name>
@@ -41,7 +41,7 @@
         </uniform>
         <uniform>
             <name>u_AmbientOcclusionMap</name>
-            <value>5_Reflections\Textures\Default_AO.jpg</value>
+            <value>5_Reflections\Textures\Helmet_AO.jpg</value>
         </uniform>
         <uniform>
             <name>u_BuiltInGammaCorrection</name>
@@ -61,11 +61,11 @@
         </uniform>
         <uniform>
             <name>u_MetallicMap</name>
-            <value>5_Reflections\Textures\Default_metal.jpeg</value>
+            <value>5_Reflections\Textures\Helmet_metal.jpeg</value>
         </uniform>
         <uniform>
             <name>u_NormalMap</name>
-            <value>5_Reflections\Textures\Default_normal.jpg</value>
+            <value>5_Reflections\Textures\Helmet_normal.jpg</value>
         </uniform>
         <uniform>
             <name>u_Roughness</name>
@@ -73,7 +73,7 @@
         </uniform>
         <uniform>
             <name>u_RoughnessMap</name>
-            <value>5_Reflections\Textures\Default_roughness.jpeg</value>
+            <value>5_Reflections\Textures\Helmet_roughness.jpeg</value>
         </uniform>
         <uniform>
             <name>u_TextureOffset</name>

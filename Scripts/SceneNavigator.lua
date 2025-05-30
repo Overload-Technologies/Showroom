@@ -26,6 +26,10 @@ function Scene_Switcher:OnUpdate(deltaTime)
     if Inputs.GetKeyDown(Key.ALPHA_6) then
         Scenes.Load("6_TimeOfDay/TimeOfDay.ovscene")
     end
+
+    if Inputs.GetKeyDown(Key.ALPHA_7) then
+        Scenes.Load("7_Emissive/Emissive.ovscene")
+    end
 end
 
 return Scene_Switcher

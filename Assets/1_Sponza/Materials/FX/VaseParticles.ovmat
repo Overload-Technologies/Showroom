@@ -11,6 +11,8 @@
         <color_writing>true</color_writing>
         <cast_shadows>false</cast_shadows>
         <receive_shadows>false</receive_shadows>
+        <captured_by_reflection_probes>true</captured_by_reflection_probes>
+        <receive_reflections>true</receive_reflections>
         <user_interface>false</user_interface>
         <gpu_instances>100</gpu_instances>
         <draw_order>1000</draw_order>

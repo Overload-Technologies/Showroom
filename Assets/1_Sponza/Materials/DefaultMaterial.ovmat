@@ -11,11 +11,17 @@
         <color_writing>true</color_writing>
         <cast_shadows>true</cast_shadows>
         <receive_shadows>true</receive_shadows>
+        <captured_by_reflection_probes>true</captured_by_reflection_probes>
+        <receive_reflections>true</receive_reflections>
         <user_interface>false</user_interface>
         <gpu_instances>1</gpu_instances>
         <draw_order>1000</draw_order>
     </settings>
     <uniforms>
+        <uniform>
+            <name>_EnvironmentMap</name>
+            <value>?</value>
+        </uniform>
         <uniform>
             <name>_LightSpaceMatrix</name>
         </uniform>

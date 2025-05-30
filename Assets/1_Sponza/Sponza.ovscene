@@ -16,7 +16,7 @@
                                 <y>0.99999541</y>
                                 <z>0.99998999</z>
                             </color>
-                            <intensity>5</intensity>
+                            <intensity>10</intensity>
                             <cast_shadows>true</cast_shadows>
                             <shadow_area_size>50</shadow_area_size>
                             <shadow_follow_camera>false</shadow_follow_camera>
@@ -155,6 +155,7 @@
                                 <material>1_Sponza\Materials\vase.ovmat</material>
                                 <material>1_Sponza\Materials\roof.ovmat</material>
                             </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -712,6 +713,7 @@
                             <materials>
                                 <material>1_Sponza\Materials\FX\VaseParticles.ovmat</material>
                             </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -751,6 +753,7 @@
                             <materials>
                                 <material>1_Sponza\Materials\FX\VaseParticles.ovmat</material>
                             </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -816,6 +819,7 @@
                             <materials>
                                 <material>1_Sponza\Materials\FX\VaseParticles.ovmat</material>
                             </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -868,6 +872,7 @@
                             <materials>
                                 <material>1_Sponza\Materials\FX\VaseParticles.ovmat</material>
                             </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -1693,6 +1698,7 @@
                         <type>class OvCore::ECS::Components::CMaterialRenderer</type>
                         <data>
                             <materials/>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -1917,6 +1923,7 @@
                             <materials>
                                 <material>1_Sponza\Materials\FX\TeleportParticles.ovmat</material>
                             </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -2047,6 +2054,7 @@
                         <type>class OvCore::ECS::Components::CMaterialRenderer</type>
                         <data>
                             <materials/>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -2104,6 +2112,7 @@
                             <materials>
                                 <material>1_Sponza\Materials\FX\TeleportParticles.ovmat</material>
                             </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -2382,6 +2391,7 @@
                             <materials>
                                 <material>1_Sponza\Materials\FX\CameraFade.ovmat</material>
                             </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -2541,53 +2551,6 @@
                 <behaviours/>
             </actor>
             <actor>
-                <name>Ambient Box Light</name>
-                <tag></tag>
-                <active>true</active>
-                <id>106</id>
-                <parent>50</parent>
-                <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CAmbientBoxLight</type>
-                        <data>
-                            <color>
-                                <x>0.88395345</x>
-                                <y>0.89019608</y>
-                                <z>0.35956937</z>
-                            </color>
-                            <intensity>0.0049999999</intensity>
-                            <size>
-                                <x>100</x>
-                                <y>100</y>
-                                <z>100</z>
-                            </size>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </scale>
-                        </data>
-                    </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
                 <name>Post Process Stack</name>
                 <tag></tag>
                 <active>true</active>
@@ -2688,6 +2651,7 @@
                             <materials>
                                 <material>:Materials\Atmosphere.ovmat</material>
                             </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -2709,6 +2673,58 @@
                             <position>
                                 <x>0</x>
                                 <y>0</y>
+                                <z>0</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                                <w>1</w>
+                            </rotation>
+                            <scale>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </scale>
+                        </data>
+                    </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Reflection Probe</name>
+                <tag></tag>
+                <active>true</active>
+                <id>110</id>
+                <parent>0</parent>
+                <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CReflectionProbe</type>
+                        <data>
+                            <refresh_mode>1</refresh_mode>
+                            <capture_speed>1</capture_speed>
+                            <capture_position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </capture_position>
+                            <brightness>0.5</brightness>
+                            <resolution>1024</resolution>
+                            <influence_policy>1</influence_policy>
+                            <influence_size>
+                                <x>10</x>
+                                <y>10</y>
+                                <z>10</z>
+                            </influence_size>
+                            <box_projection>false</box_projection>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>0</x>
+                                <y>1.4981118</y>
                                 <z>0</z>
                             </position>
                             <rotation>

@@ -6,7 +6,7 @@
                 <tag></tag>
                 <active>true</active>
                 <id>1</id>
-                <parent>15</parent>
+                <parent>0</parent>
                 <components>
                     <component>
                         <type>class OvCore::ECS::Components::CDirectionalLight</type>
@@ -41,49 +41,6 @@
                                 <x>0.99999994</x>
                                 <y>1.0000006</y>
                                 <z>1.0000004</z>
-                            </scale>
-                        </data>
-                    </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Ambient Light</name>
-                <tag></tag>
-                <active>true</active>
-                <id>2</id>
-                <parent>15</parent>
-                <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CAmbientSphereLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>0.99998999</y>
-                                <z>0.99998999</z>
-                            </color>
-                            <intensity>0.0099999998</intensity>
-                            <radius>10000</radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
                             </scale>
                         </data>
                     </component>
@@ -151,6 +108,19 @@
                 <parent>16</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>4_Materials\Materials\ShaderBall_D.ovmat</material>
+                                <material>4_Materials\Materials\ShaderBall_D.ovmat</material>
+                                <material>4_Materials\Materials\ShaderBall_D.ovmat</material>
+                                <material>4_Materials\Materials\ShaderBall_D.ovmat</material>
+                                <material>4_Materials\Materials\ShaderBall_D.ovmat</material>
+                            </materials>
+                            <visibility_flags>3</visibility_flags>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>4_Materials\Models\Shader_Ball.fbx</model>
@@ -161,18 +131,6 @@
                                 <z>0</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>4_Materials\Materials\ShaderBall_D.ovmat</material>
-                                <material>4_Materials\Materials\ShaderBall_D.ovmat</material>
-                                <material>4_Materials\Materials\ShaderBall_D.ovmat</material>
-                                <material>4_Materials\Materials\ShaderBall_D.ovmat</material>
-                                <material>4_Materials\Materials\ShaderBall_D.ovmat</material>
-                            </materials>
                         </data>
                     </component>
                     <component>
@@ -207,18 +165,6 @@
                 <parent>16</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>4_Materials\Materials\ShaderBall_A.ovmat</material>
-                                <material>4_Materials\Materials\ShaderBall_A.ovmat</material>
-                                <material>4_Materials\Materials\ShaderBall_A.ovmat</material>
-                                <material>4_Materials\Materials\ShaderBall_A.ovmat</material>
-                                <material>4_Materials\Materials\ShaderBall_A.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
-                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>4_Materials\Models\Shader_Ball.fbx</model>
@@ -229,6 +175,19 @@
                                 <z>0</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>4_Materials\Materials\ShaderBall_A.ovmat</material>
+                                <material>4_Materials\Materials\ShaderBall_A.ovmat</material>
+                                <material>4_Materials\Materials\ShaderBall_A.ovmat</material>
+                                <material>4_Materials\Materials\ShaderBall_A.ovmat</material>
+                                <material>4_Materials\Materials\ShaderBall_A.ovmat</material>
+                            </materials>
+                            <visibility_flags>3</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -263,6 +222,19 @@
                 <parent>16</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>4_Materials\Materials\ShaderBall_B.ovmat</material>
+                                <material>4_Materials\Materials\ShaderBall_B.ovmat</material>
+                                <material>4_Materials\Materials\ShaderBall_B.ovmat</material>
+                                <material>4_Materials\Materials\ShaderBall_B.ovmat</material>
+                                <material>4_Materials\Materials\ShaderBall_B.ovmat</material>
+                            </materials>
+                            <visibility_flags>3</visibility_flags>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>4_Materials\Models\Shader_Ball.fbx</model>
@@ -273,18 +245,6 @@
                                 <z>0</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>4_Materials\Materials\ShaderBall_B.ovmat</material>
-                                <material>4_Materials\Materials\ShaderBall_B.ovmat</material>
-                                <material>4_Materials\Materials\ShaderBall_B.ovmat</material>
-                                <material>4_Materials\Materials\ShaderBall_B.ovmat</material>
-                                <material>4_Materials\Materials\ShaderBall_B.ovmat</material>
-                            </materials>
                         </data>
                     </component>
                     <component>
@@ -319,18 +279,6 @@
                 <parent>16</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>4_Materials\Materials\ShaderBall_C.ovmat</material>
-                                <material>4_Materials\Materials\ShaderBall_C.ovmat</material>
-                                <material>4_Materials\Materials\ShaderBall_C.ovmat</material>
-                                <material>4_Materials\Materials\ShaderBall_C.ovmat</material>
-                                <material>4_Materials\Materials\ShaderBall_C.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
-                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>4_Materials\Models\Shader_Ball.fbx</model>
@@ -344,93 +292,16 @@
                         </data>
                     </component>
                     <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
                         <data>
-                            <position>
-                                <x>1.5</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </scale>
-                        </data>
-                    </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Point Light 1</name>
-                <tag></tag>
-                <active>true</active>
-                <id>8</id>
-                <parent>15</parent>
-                <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPointLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </color>
-                            <intensity>2</intensity>
-                            <constant>0</constant>
-                            <linear>0</linear>
-                            <quadratic>1</quadratic>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>4.5</x>
-                                <y>2</y>
-                                <z>2.0221381</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </scale>
-                        </data>
-                    </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Point Light 2</name>
-                <tag></tag>
-                <active>true</active>
-                <id>9</id>
-                <parent>15</parent>
-                <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPointLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </color>
-                            <intensity>2</intensity>
-                            <constant>0</constant>
-                            <linear>0</linear>
-                            <quadratic>1</quadratic>
+                            <materials>
+                                <material>4_Materials\Materials\ShaderBall_C.ovmat</material>
+                                <material>4_Materials\Materials\ShaderBall_C.ovmat</material>
+                                <material>4_Materials\Materials\ShaderBall_C.ovmat</material>
+                                <material>4_Materials\Materials\ShaderBall_C.ovmat</material>
+                                <material>4_Materials\Materials\ShaderBall_C.ovmat</material>
+                            </materials>
+                            <visibility_flags>3</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -438,98 +309,8 @@
                         <data>
                             <position>
                                 <x>1.5</x>
-                                <y>2</y>
-                                <z>2.0186791</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
                                 <y>0</y>
                                 <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </scale>
-                        </data>
-                    </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Point Light 3</name>
-                <tag></tag>
-                <active>true</active>
-                <id>10</id>
-                <parent>15</parent>
-                <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPointLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </color>
-                            <intensity>2</intensity>
-                            <constant>0</constant>
-                            <linear>0</linear>
-                            <quadratic>1</quadratic>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>-1.5</x>
-                                <y>2</y>
-                                <z>2</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </scale>
-                        </data>
-                    </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
-                <name>Point Light 4</name>
-                <tag></tag>
-                <active>true</active>
-                <id>11</id>
-                <parent>15</parent>
-                <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPointLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </color>
-                            <intensity>2</intensity>
-                            <constant>0</constant>
-                            <linear>0</linear>
-                            <quadratic>1</quadratic>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>-4.5</x>
-                                <y>2</y>
-                                <z>2</z>
                             </position>
                             <rotation>
                                 <x>0</x>
@@ -555,6 +336,15 @@
                 <parent>16</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>4_Materials\Materials\Ground.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>:Models\Cube.fbx</model>
@@ -565,14 +355,6 @@
                                 <z>0</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>4_Materials\Materials\Ground.ovmat</material>
-                            </materials>
                         </data>
                     </component>
                     <component>
@@ -672,37 +454,6 @@
                 </behaviours>
             </actor>
             <actor>
-                <name>Lights</name>
-                <tag></tag>
-                <active>true</active>
-                <id>15</id>
-                <parent>0</parent>
-                <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </scale>
-                        </data>
-                    </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
                 <name>Environment</name>
                 <tag></tag>
                 <active>true</active>
@@ -741,14 +492,6 @@
                 <parent>0</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>:Materials\Atmosphere.ovmat</material>
-                            </materials>
-                        </data>
-                    </component>
-                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>:Models\Sphere.fbx</model>
@@ -759,6 +502,15 @@
                                 <z>0</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>:Materials\Atmosphere.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -807,8 +559,8 @@
                             <auto_exposure_speed_up>1</auto_exposure_speed_up>
                             <auto_exposure_speed_down>1</auto_exposure_speed_down>
                             <tonemapping_enabled>true</tonemapping_enabled>
-                            <tonemapping_exposure>1.5</tonemapping_exposure>
-                            <tonemapping_mode>0</tonemapping_mode>
+                            <tonemapping_exposure>1.2</tonemapping_exposure>
+                            <tonemapping_mode>5</tonemapping_mode>
                             <tonemapping_gamma_correction>true</tonemapping_gamma_correction>
                             <fxaa_enabled>true</fxaa_enabled>
                         </data>
@@ -819,6 +571,58 @@
                             <position>
                                 <x>0</x>
                                 <y>0</y>
+                                <z>0</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                                <w>1</w>
+                            </rotation>
+                            <scale>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </scale>
+                        </data>
+                    </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Reflection Probe</name>
+                <tag></tag>
+                <active>true</active>
+                <id>20</id>
+                <parent>0</parent>
+                <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CReflectionProbe</type>
+                        <data>
+                            <refresh_mode>1</refresh_mode>
+                            <capture_speed>6</capture_speed>
+                            <capture_position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </capture_position>
+                            <brightness>1</brightness>
+                            <resolution>1024</resolution>
+                            <influence_policy>1</influence_policy>
+                            <influence_size>
+                                <x>10</x>
+                                <y>10</y>
+                                <z>10</z>
+                            </influence_size>
+                            <box_projection>false</box_projection>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>0</x>
+                                <y>2</y>
                                 <z>0</z>
                             </position>
                             <rotation>

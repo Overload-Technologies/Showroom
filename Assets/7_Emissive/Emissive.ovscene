@@ -9,10 +9,6 @@
                 <parent>7</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CAudioListener</type>
-                        <data/>
-                    </component>
-                    <component>
                         <type>class OvCore::ECS::Components::CCamera</type>
                         <data>
                             <fov>60</fov>
@@ -28,6 +24,10 @@
                             <frustum_light_culling>true</frustum_light_culling>
                             <projection_mode>1</projection_mode>
                         </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CAudioListener</type>
+                        <data/>
                     </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
@@ -112,6 +112,15 @@
                 <parent>0</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>:Materials\Atmosphere.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>:Models\Sphere.fbx</model>
@@ -122,15 +131,6 @@
                                 <z>0</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>:Materials\Atmosphere.ovmat</material>
-                            </materials>
-                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -253,15 +253,6 @@
                 <parent>0</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>7_Emissive\Materials\Quary.ovmat</material>
-                            </materials>
-                            <visibility_flags>3</visibility_flags>
-                        </data>
-                    </component>
-                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>7_Emissive\Models\Quarry_Cliff_ubhubhyda_High.fbx</model>
@@ -272,6 +263,15 @@
                                 <z>0</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>7_Emissive\Materials\Quary.ovmat</material>
+                            </materials>
+                            <visibility_flags>3</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -306,15 +306,6 @@
                 <parent>12</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>7_Emissive\Materials\Emissive_Red.ovmat</material>
-                            </materials>
-                            <visibility_flags>7</visibility_flags>
-                        </data>
-                    </component>
-                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>:Models\Cylinder.fbx</model>
@@ -325,6 +316,15 @@
                                 <z>0</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>7_Emissive\Materials\Emissive_Red.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -359,6 +359,15 @@
                 <parent>13</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>7_Emissive\Materials\Emissive_Blue.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>:Models\Cylinder.fbx</model>
@@ -369,15 +378,6 @@
                                 <z>0</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>7_Emissive\Materials\Emissive_Blue.ovmat</material>
-                            </materials>
-                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -536,15 +536,6 @@
                 <parent>12</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>7_Emissive\Materials\Handle.ovmat</material>
-                            </materials>
-                            <visibility_flags>7</visibility_flags>
-                        </data>
-                    </component>
-                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>:Models\Cylinder.fbx</model>
@@ -555,6 +546,15 @@
                                 <z>0</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>7_Emissive\Materials\Handle.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -589,6 +589,15 @@
                 <parent>13</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>7_Emissive\Materials\Handle.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>:Models\Cylinder.fbx</model>
@@ -599,15 +608,6 @@
                                 <z>0</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>7_Emissive\Materials\Handle.ovmat</material>
-                            </materials>
-                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>

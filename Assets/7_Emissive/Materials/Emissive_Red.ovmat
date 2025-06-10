@@ -21,7 +21,7 @@
         <uniform>
             <name>u_Albedo</name>
             <value>
-                <x>15</x>
+                <x>1</x>
                 <y>1</y>
                 <z>1</z>
                 <w>1</w>
@@ -50,6 +50,22 @@
         <uniform>
             <name>u_BuiltInToneMapping</name>
             <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_EmissiveColor</name>
+            <value>
+                <x>1</x>
+                <y>0</y>
+                <z>0</z>
+            </value>
+        </uniform>
+        <uniform>
+            <name>u_EmissiveIntensity</name>
+            <value>500</value>
+        </uniform>
+        <uniform>
+            <name>u_EmissiveMap</name>
+            <value>?</value>
         </uniform>
         <uniform>
             <name>u_MaskMap</name>

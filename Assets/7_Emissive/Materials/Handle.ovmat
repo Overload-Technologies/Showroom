@@ -52,6 +52,22 @@
             <value>0</value>
         </uniform>
         <uniform>
+            <name>u_EmissiveColor</name>
+            <value>
+                <x>1</x>
+                <y>1</y>
+                <z>1</z>
+            </value>
+        </uniform>
+        <uniform>
+            <name>u_EmissiveIntensity</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_EmissiveMap</name>
+            <value>?</value>
+        </uniform>
+        <uniform>
             <name>u_MaskMap</name>
             <value>?</value>
         </uniform>

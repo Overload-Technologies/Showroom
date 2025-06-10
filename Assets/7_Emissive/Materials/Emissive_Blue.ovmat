@@ -23,7 +23,7 @@
             <value>
                 <x>1</x>
                 <y>1</y>
-                <z>15</z>
+                <z>1</z>
                 <w>1</w>
             </value>
         </uniform>
@@ -50,6 +50,22 @@
         <uniform>
             <name>u_BuiltInToneMapping</name>
             <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_EmissiveColor</name>
+            <value>
+                <x>0</x>
+                <y>0</y>
+                <z>1</z>
+            </value>
+        </uniform>
+        <uniform>
+            <name>u_EmissiveIntensity</name>
+            <value>500</value>
+        </uniform>
+        <uniform>
+            <name>u_EmissiveMap</name>
+            <value>?</value>
         </uniform>
         <uniform>
             <name>u_MaskMap</name>

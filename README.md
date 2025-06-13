@@ -31,7 +31,7 @@ When opened, the **Sponza** scene shows a cinematic, where the camera roam aroun
 Pressing `[ALT]` will lock/unlock the mouse cursor.
 
 ## Other scenes
-In these scenes, you can hold the mouse left button to rotate the camera, and use the mouse wheel to zoom in and out.
+In these scenes, you can hold the mouse right button to rotate the camera, and use the mouse wheel to zoom in and out.
 
 # Screenshots
 ## [1] Sponza

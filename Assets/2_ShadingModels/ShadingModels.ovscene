@@ -48,49 +48,6 @@
                 <behaviours/>
             </actor>
             <actor>
-                <name>Ambient Light</name>
-                <tag></tag>
-                <active>true</active>
-                <id>2</id>
-                <parent>0</parent>
-                <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CAmbientSphereLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>0.99998999</y>
-                                <z>0.99998999</z>
-                            </color>
-                            <intensity>0.5</intensity>
-                            <radius>10000</radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </scale>
-                        </data>
-                    </component>
-                </components>
-                <behaviours/>
-            </actor>
-            <actor>
                 <name>Main Camera</name>
                 <tag></tag>
                 <active>true</active>
@@ -170,6 +127,7 @@
                                 <material>:Materials\Default.ovmat</material>
                                 <material>2_ShadingModels\Materials\PBR Pistol.ovmat</material>
                             </materials>
+                            <visibility_flags>3</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -290,6 +248,7 @@
                                 <material>:Materials\Default.ovmat</material>
                                 <material>2_ShadingModels\Materials\Unlit Pistol.ovmat</material>
                             </materials>
+                            <visibility_flags>3</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -329,6 +288,7 @@
                             <materials>
                                 <material>2_ShadingModels\Materials\Ground.ovmat</material>
                             </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -482,6 +442,7 @@
                             <materials>
                                 <material>:Materials\Atmosphere.ovmat</material>
                             </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -490,6 +451,58 @@
                             <position>
                                 <x>0</x>
                                 <y>0</y>
+                                <z>0</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                                <w>1</w>
+                            </rotation>
+                            <scale>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </scale>
+                        </data>
+                    </component>
+                </components>
+                <behaviours/>
+            </actor>
+            <actor>
+                <name>Reflection Probe</name>
+                <tag></tag>
+                <active>true</active>
+                <id>26</id>
+                <parent>0</parent>
+                <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CReflectionProbe</type>
+                        <data>
+                            <refresh_mode>0</refresh_mode>
+                            <capture_speed>1</capture_speed>
+                            <capture_position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </capture_position>
+                            <brightness>1</brightness>
+                            <resolution>512</resolution>
+                            <influence_policy>1</influence_policy>
+                            <influence_size>
+                                <x>10</x>
+                                <y>10</y>
+                                <z>10</z>
+                            </influence_size>
+                            <box_projection>false</box_projection>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>0</x>
+                                <y>3.4446037</y>
                                 <z>0</z>
                             </position>
                             <rotation>

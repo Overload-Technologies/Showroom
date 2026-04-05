@@ -47,7 +47,12 @@
                         </data>
                     </component>
                 </components>
-                <behaviours/>
+                <behaviours>
+                    <behaviour>
+                        <type>WheelZoom</type>
+                        <data/>
+                    </behaviour>
+                </behaviours>
             </actor>
             <actor>
                 <name>Directional Light</name>
@@ -155,6 +160,15 @@
                 <parent>0</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>:Materials\Atmosphere.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>:Models\Sphere.fbx</model>
@@ -165,15 +179,6 @@
                                 <z>0</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>:Materials\Atmosphere.ovmat</material>
-                            </materials>
-                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -260,6 +265,15 @@
                 <parent>0</parent>
                 <components>
                     <component>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <data>
+                            <materials>
+                                <material>:Materials\Default.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
+                        </data>
+                    </component>
+                    <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
                             <model>:Models\Cube.fbx</model>
@@ -270,15 +284,6 @@
                                 <z>0</z>
                             </custom_bounding_sphere_position>
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
-                        </data>
-                    </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
-                        <data>
-                            <materials>
-                                <material>:Materials\Default.ovmat</material>
-                            </materials>
-                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -313,14 +318,14 @@
                 <parent>10</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CSkinnedMeshRenderer</type>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
                         <data>
-                            <playing>true</playing>
-                            <looping>true</looping>
-                            <playback_speed>1</playback_speed>
-                            <pose_eval_rate>60</pose_eval_rate>
-                            <time_ticks>0</time_ticks>
-                            <animation>root|run</animation>
+                            <materials>
+                                <material>9_Animation/Materials/Blue.ovmat</material>
+                                <material>9_Animation/Materials/White.ovmat</material>
+                                <material>9_Animation/Materials/Black.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -337,14 +342,14 @@
                         </data>
                     </component>
                     <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <type>class OvCore::ECS::Components::CSkinnedMeshRenderer</type>
                         <data>
-                            <materials>
-                                <material>9_Animation/Materials/Blue.ovmat</material>
-                                <material>9_Animation/Materials/White.ovmat</material>
-                                <material>9_Animation/Materials/Black.ovmat</material>
-                            </materials>
-                            <visibility_flags>7</visibility_flags>
+                            <playing>true</playing>
+                            <looping>true</looping>
+                            <playback_speed>1</playback_speed>
+                            <pose_eval_rate>60</pose_eval_rate>
+                            <time_ticks>0</time_ticks>
+                            <animation>root|run</animation>
                         </data>
                     </component>
                     <component>
@@ -415,14 +420,14 @@
                 <parent>10</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <type>class OvCore::ECS::Components::CSkinnedMeshRenderer</type>
                         <data>
-                            <materials>
-                                <material>9_Animation/Materials/Blue.ovmat</material>
-                                <material>9_Animation/Materials/White.ovmat</material>
-                                <material>9_Animation/Materials/Black.ovmat</material>
-                            </materials>
-                            <visibility_flags>7</visibility_flags>
+                            <playing>true</playing>
+                            <looping>true</looping>
+                            <playback_speed>1</playback_speed>
+                            <pose_eval_rate>60</pose_eval_rate>
+                            <time_ticks>0</time_ticks>
+                            <animation>root|walk</animation>
                         </data>
                     </component>
                     <component>
@@ -439,14 +444,14 @@
                         </data>
                     </component>
                     <component>
-                        <type>class OvCore::ECS::Components::CSkinnedMeshRenderer</type>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
                         <data>
-                            <playing>true</playing>
-                            <looping>true</looping>
-                            <playback_speed>1</playback_speed>
-                            <pose_eval_rate>60</pose_eval_rate>
-                            <time_ticks>0</time_ticks>
-                            <animation>root|walk</animation>
+                            <materials>
+                                <material>9_Animation/Materials/Blue.ovmat</material>
+                                <material>9_Animation/Materials/White.ovmat</material>
+                                <material>9_Animation/Materials/Black.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -512,14 +517,14 @@
                 <parent>10</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CSkinnedMeshRenderer</type>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
                         <data>
-                            <playing>true</playing>
-                            <looping>true</looping>
-                            <playback_speed>1</playback_speed>
-                            <pose_eval_rate>60</pose_eval_rate>
-                            <time_ticks>0</time_ticks>
-                            <animation>root|fight_kick</animation>
+                            <materials>
+                                <material>9_Animation/Materials/Blue.ovmat</material>
+                                <material>9_Animation/Materials/White.ovmat</material>
+                                <material>9_Animation/Materials/Black.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>
@@ -536,14 +541,14 @@
                         </data>
                     </component>
                     <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <type>class OvCore::ECS::Components::CSkinnedMeshRenderer</type>
                         <data>
-                            <materials>
-                                <material>9_Animation/Materials/Blue.ovmat</material>
-                                <material>9_Animation/Materials/White.ovmat</material>
-                                <material>9_Animation/Materials/Black.ovmat</material>
-                            </materials>
-                            <visibility_flags>7</visibility_flags>
+                            <playing>true</playing>
+                            <looping>true</looping>
+                            <playback_speed>1</playback_speed>
+                            <pose_eval_rate>60</pose_eval_rate>
+                            <time_ticks>0</time_ticks>
+                            <animation>root|fight_kick</animation>
                         </data>
                     </component>
                     <component>
@@ -578,14 +583,14 @@
                 <parent>10</parent>
                 <components>
                     <component>
-                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
+                        <type>class OvCore::ECS::Components::CSkinnedMeshRenderer</type>
                         <data>
-                            <materials>
-                                <material>9_Animation/Materials/Blue.ovmat</material>
-                                <material>9_Animation/Materials/White.ovmat</material>
-                                <material>9_Animation/Materials/Black.ovmat</material>
-                            </materials>
-                            <visibility_flags>7</visibility_flags>
+                            <playing>true</playing>
+                            <looping>true</looping>
+                            <playback_speed>1</playback_speed>
+                            <pose_eval_rate>60</pose_eval_rate>
+                            <time_ticks>0</time_ticks>
+                            <animation>root|idle</animation>
                         </data>
                     </component>
                     <component>
@@ -602,14 +607,14 @@
                         </data>
                     </component>
                     <component>
-                        <type>class OvCore::ECS::Components::CSkinnedMeshRenderer</type>
+                        <type>class OvCore::ECS::Components::CMaterialRenderer</type>
                         <data>
-                            <playing>true</playing>
-                            <looping>true</looping>
-                            <playback_speed>1</playback_speed>
-                            <pose_eval_rate>60</pose_eval_rate>
-                            <time_ticks>0</time_ticks>
-                            <animation>root|idle</animation>
+                            <materials>
+                                <material>9_Animation/Materials/Blue.ovmat</material>
+                                <material>9_Animation/Materials/White.ovmat</material>
+                                <material>9_Animation/Materials/Black.ovmat</material>
+                            </materials>
+                            <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
                     <component>

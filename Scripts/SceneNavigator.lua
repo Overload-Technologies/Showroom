@@ -34,6 +34,10 @@ function Scene_Switcher:OnUpdate(deltaTime)
     if Inputs.GetKeyDown(Key.ALPHA_8) then
         Scenes.Load("8_Refraction/Refraction.ovscene")
     end
+
+    if Inputs.GetKeyDown(Key.ALPHA_9) then
+        Scenes.Load("9_Animation/Animation.ovscene")
+    end
 end
 
 return Scene_Switcher

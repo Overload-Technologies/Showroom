@@ -331,7 +331,7 @@
                     <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
-                            <model>9_Animation/Models/mannequiny.fbx</model>
+                            <model>:Models/Mannequin.fbx</model>
                             <frustum_behaviour>2</frustum_behaviour>
                             <custom_bounding_sphere_position>
                                 <x>0</x>
@@ -433,7 +433,7 @@
                     <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
-                            <model>9_Animation/Models/mannequiny.fbx</model>
+                            <model>:Models/Mannequin.fbx</model>
                             <frustum_behaviour>2</frustum_behaviour>
                             <custom_bounding_sphere_position>
                                 <x>0</x>
@@ -530,7 +530,7 @@
                     <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
-                            <model>9_Animation/Models/mannequiny.fbx</model>
+                            <model>:Models/Mannequin.fbx</model>
                             <frustum_behaviour>2</frustum_behaviour>
                             <custom_bounding_sphere_position>
                                 <x>0</x>
@@ -596,7 +596,7 @@
                     <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
-                            <model>9_Animation/Models/mannequiny.fbx</model>
+                            <model>:Models/Mannequin.fbx</model>
                             <frustum_behaviour>2</frustum_behaviour>
                             <custom_bounding_sphere_position>
                                 <x>0</x>

@@ -19,6 +19,21 @@
     </settings>
     <uniforms>
         <uniform>
+            <name>u_RoughnessMap</name>
+            <value>?</value>
+        </uniform>
+        <uniform>
+            <name>u_BuiltInGammaCorrection</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_TextureOffset</name>
+            <value>
+                <x>0</x>
+                <y>0</y>
+            </value>
+        </uniform>
+        <uniform>
             <name>u_Albedo</name>
             <value>
                 <x>1</x>
@@ -28,12 +43,63 @@
             </value>
         </uniform>
         <uniform>
-            <name>u_AlbedoMap</name>
-            <value>1_Sponza\Textures\Diffuse\sponza_fabric_blue_diff.tga</value>
+            <name>u_Roughness</name>
+            <value>1</value>
         </uniform>
         <uniform>
             <name>u_AlphaClippingThreshold</name>
             <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_AlbedoMap</name>
+            <value>1_Sponza\Textures\Diffuse\sponza_fabric_blue_diff.tga</value>
+        </uniform>
+        <uniform>
+            <name>u_EmissiveIntensity</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_Transmission</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_BuiltInToneMapping</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_MetallicMap</name>
+            <value>1_Sponza\Textures\Specular\sponza_fabric_spec.tga</value>
+        </uniform>
+        <uniform>
+            <name>u_Metallic</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_NormalMap</name>
+            <value>1_Sponza\Textures\Normals\sponza_fabric_ddn.tga</value>
+        </uniform>
+        <uniform>
+            <name>u_TextureTiling</name>
+            <value>
+                <x>1</x>
+                <y>1</y>
+            </value>
+        </uniform>
+        <uniform>
+            <name>u_EmissiveMap</name>
+            <value>?</value>
+        </uniform>
+        <uniform>
+            <name>u_RefractionIndex</name>
+            <value>1.5</value>
+        </uniform>
+        <uniform>
+            <name>u_EmissiveColor</name>
+            <value>
+                <x>1</x>
+                <y>1</y>
+                <z>1</z>
+            </value>
         </uniform>
         <uniform>
             <name>u_AlphaDithering</name>
@@ -44,50 +110,8 @@
             <value>?</value>
         </uniform>
         <uniform>
-            <name>u_BuiltInGammaCorrection</name>
-            <value>0</value>
-        </uniform>
-        <uniform>
-            <name>u_BuiltInToneMapping</name>
-            <value>0</value>
-        </uniform>
-        <uniform>
             <name>u_MaskMap</name>
             <value>?</value>
-        </uniform>
-        <uniform>
-            <name>u_Metallic</name>
-            <value>0</value>
-        </uniform>
-        <uniform>
-            <name>u_MetallicMap</name>
-            <value>1_Sponza\Textures\Specular\sponza_fabric_spec.tga</value>
-        </uniform>
-        <uniform>
-            <name>u_NormalMap</name>
-            <value>1_Sponza\Textures\Normals\sponza_fabric_ddn.tga</value>
-        </uniform>
-        <uniform>
-            <name>u_Roughness</name>
-            <value>1</value>
-        </uniform>
-        <uniform>
-            <name>u_RoughnessMap</name>
-            <value>?</value>
-        </uniform>
-        <uniform>
-            <name>u_TextureOffset</name>
-            <value>
-                <x>0</x>
-                <y>0</y>
-            </value>
-        </uniform>
-        <uniform>
-            <name>u_TextureTiling</name>
-            <value>
-                <x>1</x>
-                <y>1</y>
-            </value>
         </uniform>
     </uniforms>
     <features>NORMAL_MAPPING</features>

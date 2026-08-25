@@ -19,61 +19,16 @@
     </settings>
     <uniforms>
         <uniform>
-            <name>u_Albedo</name>
-            <value>
-                <x>1</x>
-                <y>1</y>
-                <z>1</z>
-                <w>1</w>
-            </value>
-        </uniform>
-        <uniform>
-            <name>u_AlbedoMap</name>
-            <value>6_TimeOfDay\Textures\Massive_Tundra_Rock_Formation_wd4icipcb_High_4K_BaseColor.jpg</value>
-        </uniform>
-        <uniform>
-            <name>u_AlphaClippingThreshold</name>
-            <value>0</value>
-        </uniform>
-        <uniform>
-            <name>u_AlphaDithering</name>
-            <value>0</value>
-        </uniform>
-        <uniform>
-            <name>u_AmbientOcclusionMap</name>
-            <value>6_TimeOfDay\Textures\Massive_Tundra_Rock_Formation_wd4icipcb_High_4K_AO.jpg</value>
-        </uniform>
-        <uniform>
-            <name>u_BuiltInGammaCorrection</name>
-            <value>0</value>
-        </uniform>
-        <uniform>
-            <name>u_BuiltInToneMapping</name>
-            <value>0</value>
+            <name>u_Specular</name>
+            <value>1</value>
         </uniform>
         <uniform>
             <name>u_Glossiness</name>
             <value>1</value>
         </uniform>
         <uniform>
-            <name>u_GlossinessMap</name>
-            <value>6_TimeOfDay\Textures\Massive_Tundra_Rock_Formation_wd4icipcb_High_4K_Gloss.jpg</value>
-        </uniform>
-        <uniform>
-            <name>u_MaskMap</name>
-            <value>?</value>
-        </uniform>
-        <uniform>
-            <name>u_NormalMap</name>
-            <value>6_TimeOfDay\Textures\Massive_Tundra_Rock_Formation_wd4icipcb_High_4K_Normal.jpg</value>
-        </uniform>
-        <uniform>
-            <name>u_Specular</name>
-            <value>1</value>
-        </uniform>
-        <uniform>
-            <name>u_SpecularMap</name>
-            <value>6_TimeOfDay\Textures\Massive_Tundra_Rock_Formation_wd4icipcb_High_4K_Specular.jpg</value>
+            <name>u_BuiltInGammaCorrection</name>
+            <value>0</value>
         </uniform>
         <uniform>
             <name>u_TextureOffset</name>
@@ -83,12 +38,81 @@
             </value>
         </uniform>
         <uniform>
+            <name>u_Albedo</name>
+            <value>
+                <x>1</x>
+                <y>1</y>
+                <z>1</z>
+                <w>1</w>
+            </value>
+        </uniform>
+        <uniform>
+            <name>u_AlphaClippingThreshold</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_AlbedoMap</name>
+            <value>6_TimeOfDay\Textures\Massive_Tundra_Rock_Formation_wd4icipcb_High_4K_BaseColor.jpg</value>
+        </uniform>
+        <uniform>
+            <name>u_EmissiveIntensity</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_Transmission</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_BuiltInToneMapping</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_NormalMap</name>
+            <value>6_TimeOfDay\Textures\Massive_Tundra_Rock_Formation_wd4icipcb_High_4K_Normal.jpg</value>
+        </uniform>
+        <uniform>
             <name>u_TextureTiling</name>
             <value>
                 <x>1</x>
                 <y>1</y>
             </value>
         </uniform>
+        <uniform>
+            <name>u_EmissiveMap</name>
+            <value>?</value>
+        </uniform>
+        <uniform>
+            <name>u_RefractionIndex</name>
+            <value>1.5</value>
+        </uniform>
+        <uniform>
+            <name>u_EmissiveColor</name>
+            <value>
+                <x>1</x>
+                <y>1</y>
+                <z>1</z>
+            </value>
+        </uniform>
+        <uniform>
+            <name>u_AlphaDithering</name>
+            <value>0</value>
+        </uniform>
+        <uniform>
+            <name>u_GlossinessMap</name>
+            <value>6_TimeOfDay\Textures\Massive_Tundra_Rock_Formation_wd4icipcb_High_4K_Gloss.jpg</value>
+        </uniform>
+        <uniform>
+            <name>u_AmbientOcclusionMap</name>
+            <value>6_TimeOfDay\Textures\Massive_Tundra_Rock_Formation_wd4icipcb_High_4K_AO.jpg</value>
+        </uniform>
+        <uniform>
+            <name>u_MaskMap</name>
+            <value>?</value>
+        </uniform>
+        <uniform>
+            <name>u_SpecularMap</name>
+            <value>6_TimeOfDay\Textures\Massive_Tundra_Rock_Formation_wd4icipcb_High_4K_Specular.jpg</value>
+        </uniform>
     </uniforms>
-    <features>NORMAL_MAPPING,SPECULAR_WORKFLOW</features>
+    <features>SPECULAR_WORKFLOW,NORMAL_MAPPING</features>
 </root>

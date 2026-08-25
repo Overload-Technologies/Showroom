@@ -6,23 +6,11 @@
                 <tag></tag>
                 <active>true</active>
                 <id>1</id>
+                <guid>7823111739053432684</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>0</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CDirectionalLight</type>
-                        <data>
-                            <color>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </color>
-                            <intensity>3</intensity>
-                            <cast_shadows>true</cast_shadows>
-                            <shadow_area_size>10</shadow_area_size>
-                            <shadow_follow_camera>false</shadow_follow_camera>
-                            <shadow_map_resolution>16384</shadow_map_resolution>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -44,6 +32,21 @@
                             </scale>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CDirectionalLight</type>
+                        <data>
+                            <color>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </color>
+                            <intensity>3</intensity>
+                            <cast_shadows>true</cast_shadows>
+                            <shadow_area_size>10</shadow_area_size>
+                            <shadow_follow_camera>false</shadow_follow_camera>
+                            <shadow_map_resolution>16384</shadow_map_resolution>
+                        </data>
+                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -52,25 +55,11 @@
                 <tag></tag>
                 <active>true</active>
                 <id>3</id>
+                <guid>4845658601586114497</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>19</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CCamera</type>
-                        <data>
-                            <fov>60</fov>
-                            <size>6</size>
-                            <near>0.1</near>
-                            <far>1000</far>
-                            <clear_color>
-                                <x>0.0078431377</x>
-                                <y>0.0078431377</y>
-                                <z>0.0058823535</z>
-                            </clear_color>
-                            <frustum_geometry_culling>true</frustum_geometry_culling>
-                            <frustum_light_culling>true</frustum_light_culling>
-                            <projection_mode>1</projection_mode>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -92,10 +81,27 @@
                             </scale>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CCamera</type>
+                        <data>
+                            <fov>60</fov>
+                            <size>6</size>
+                            <near>0.1</near>
+                            <far>1000</far>
+                            <clear_color>
+                                <x>0.0078431377</x>
+                                <y>0.0078431377</y>
+                                <z>0.0058823535</z>
+                            </clear_color>
+                            <frustum_geometry_culling>true</frustum_geometry_culling>
+                            <frustum_light_culling>true</frustum_light_culling>
+                            <projection_mode>1</projection_mode>
+                        </data>
+                    </component>
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>WheelZoom</type>
+                        <type>Scripts/WheelZoom.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -105,8 +111,32 @@
                 <tag></tag>
                 <active>true</active>
                 <id>15</id>
+                <guid>7136840282419287818</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>18</parent>
                 <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>0</x>
+                                <y>-1.2</y>
+                                <z>0</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>1.4210856e-14</y>
+                                <z>0</z>
+                                <w>1</w>
+                            </rotation>
+                            <scale>
+                                <x>1.9999998</x>
+                                <y>2</y>
+                                <z>1.9999998</z>
+                            </scale>
+                        </data>
+                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
@@ -130,27 +160,6 @@
                             <visibility_flags>3</visibility_flags>
                         </data>
                     </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>0</x>
-                                <y>-1.2</y>
-                                <z>0</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>1.4210856e-14</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1.9999998</x>
-                                <y>2</y>
-                                <z>1.9999998</z>
-                            </scale>
-                        </data>
-                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -159,6 +168,9 @@
                 <tag></tag>
                 <active>true</active>
                 <id>18</id>
+                <guid>7553923709963800269</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>0</parent>
                 <components>
                     <component>
@@ -190,6 +202,9 @@
                 <tag></tag>
                 <active>true</active>
                 <id>19</id>
+                <guid>3616778520973502556</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>0</parent>
                 <components>
                     <component>
@@ -216,7 +231,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>OrbitalRotor</type>
+                        <type>Scripts/OrbitalRotor.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -226,8 +241,32 @@
                 <tag></tag>
                 <active>true</active>
                 <id>21</id>
+                <guid>6574462542793014284</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>18</parent>
                 <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>0</x>
+                                <y>1.2</y>
+                                <z>0</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>1.4210856e-14</y>
+                                <z>0</z>
+                                <w>1</w>
+                            </rotation>
+                            <scale>
+                                <x>1.9999998</x>
+                                <y>2</y>
+                                <z>1.9999998</z>
+                            </scale>
+                        </data>
+                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
@@ -251,27 +290,6 @@
                             <visibility_flags>3</visibility_flags>
                         </data>
                     </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>0</x>
-                                <y>1.2</y>
-                                <z>0</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>1.4210856e-14</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1.9999998</x>
-                                <y>2</y>
-                                <z>1.9999998</z>
-                            </scale>
-                        </data>
-                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -280,8 +298,32 @@
                 <tag></tag>
                 <active>true</active>
                 <id>22</id>
+                <guid>9735640090234251772</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>0</parent>
                 <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                                <w>1</w>
+                            </rotation>
+                            <scale>
+                                <x>15</x>
+                                <y>0.1</y>
+                                <z>15</z>
+                            </scale>
+                        </data>
+                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CMaterialRenderer</type>
                         <data>
@@ -304,27 +346,6 @@
                             <custom_bounding_sphere_radius>1</custom_bounding_sphere_radius>
                         </data>
                     </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>15</x>
-                                <y>0.1</y>
-                                <z>15</z>
-                            </scale>
-                        </data>
-                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -333,29 +354,11 @@
                 <tag></tag>
                 <active>true</active>
                 <id>23</id>
+                <guid>9297691715215783100</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>0</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CPostProcessStack</type>
-                        <data>
-                            <bloom_enabled>true</bloom_enabled>
-                            <bloom_intensity>0.2</bloom_intensity>
-                            <bloom_passes>10</bloom_passes>
-                            <auto_exposure_enabled>true</auto_exposure_enabled>
-                            <auto_exposure_center_weight_bias>0.5</auto_exposure_center_weight_bias>
-                            <auto_exposure_luminance_min>-2</auto_exposure_luminance_min>
-                            <auto_exposure_luminance_max>16</auto_exposure_luminance_max>
-                            <auto_exposure_exposure_compensation>-1</auto_exposure_exposure_compensation>
-                            <auto_exposure_progressive>true</auto_exposure_progressive>
-                            <auto_exposure_speed_up>1</auto_exposure_speed_up>
-                            <auto_exposure_speed_down>1</auto_exposure_speed_down>
-                            <tonemapping_enabled>true</tonemapping_enabled>
-                            <tonemapping_exposure>1.2</tonemapping_exposure>
-                            <tonemapping_mode>5</tonemapping_mode>
-                            <tonemapping_gamma_correction>true</tonemapping_gamma_correction>
-                            <fxaa_enabled>true</fxaa_enabled>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -377,6 +380,27 @@
                             </scale>
                         </data>
                     </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CPostProcessStack</type>
+                        <data>
+                            <bloom_enabled>true</bloom_enabled>
+                            <bloom_intensity>0.2</bloom_intensity>
+                            <bloom_passes>10</bloom_passes>
+                            <auto_exposure_enabled>true</auto_exposure_enabled>
+                            <auto_exposure_center_weight_bias>0.5</auto_exposure_center_weight_bias>
+                            <auto_exposure_luminance_min>-2</auto_exposure_luminance_min>
+                            <auto_exposure_luminance_max>16</auto_exposure_luminance_max>
+                            <auto_exposure_exposure_compensation>-1</auto_exposure_exposure_compensation>
+                            <auto_exposure_progressive>true</auto_exposure_progressive>
+                            <auto_exposure_speed_up>1</auto_exposure_speed_up>
+                            <auto_exposure_speed_down>1</auto_exposure_speed_down>
+                            <tonemapping_enabled>true</tonemapping_enabled>
+                            <tonemapping_exposure>1.2</tonemapping_exposure>
+                            <tonemapping_mode>5</tonemapping_mode>
+                            <tonemapping_gamma_correction>true</tonemapping_gamma_correction>
+                            <fxaa_enabled>true</fxaa_enabled>
+                        </data>
+                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -385,6 +409,9 @@
                 <tag></tag>
                 <active>true</active>
                 <id>24</id>
+                <guid>1969120060957572811</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>0</parent>
                 <components>
                     <component>
@@ -411,7 +438,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>SceneNavigator</type>
+                        <type>Scripts/SceneNavigator.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -421,8 +448,32 @@
                 <tag></tag>
                 <active>true</active>
                 <id>25</id>
+                <guid>15888480415336881700</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>0</parent>
                 <components>
+                    <component>
+                        <type>class OvCore::ECS::Components::CTransform</type>
+                        <data>
+                            <position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </position>
+                            <rotation>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                                <w>1</w>
+                            </rotation>
+                            <scale>
+                                <x>1</x>
+                                <y>1</y>
+                                <z>1</z>
+                            </scale>
+                        </data>
+                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CModelRenderer</type>
                         <data>
@@ -445,27 +496,6 @@
                             <visibility_flags>7</visibility_flags>
                         </data>
                     </component>
-                    <component>
-                        <type>class OvCore::ECS::Components::CTransform</type>
-                        <data>
-                            <position>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </position>
-                            <rotation>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                                <w>1</w>
-                            </rotation>
-                            <scale>
-                                <x>1</x>
-                                <y>1</y>
-                                <z>1</z>
-                            </scale>
-                        </data>
-                    </component>
                 </components>
                 <behaviours/>
             </actor>
@@ -474,29 +504,11 @@
                 <tag></tag>
                 <active>true</active>
                 <id>26</id>
+                <guid>9857192408020276384</guid>
+                <prefab_source></prefab_source>
+                <prefab_node_guid>0</prefab_node_guid>
                 <parent>0</parent>
                 <components>
-                    <component>
-                        <type>class OvCore::ECS::Components::CReflectionProbe</type>
-                        <data>
-                            <refresh_mode>0</refresh_mode>
-                            <capture_speed>1</capture_speed>
-                            <capture_position>
-                                <x>0</x>
-                                <y>0</y>
-                                <z>0</z>
-                            </capture_position>
-                            <brightness>1</brightness>
-                            <resolution>512</resolution>
-                            <influence_policy>1</influence_policy>
-                            <influence_size>
-                                <x>10</x>
-                                <y>10</y>
-                                <z>10</z>
-                            </influence_size>
-                            <box_projection>false</box_projection>
-                        </data>
-                    </component>
                     <component>
                         <type>class OvCore::ECS::Components::CTransform</type>
                         <data>
@@ -516,6 +528,27 @@
                                 <y>1</y>
                                 <z>1</z>
                             </scale>
+                        </data>
+                    </component>
+                    <component>
+                        <type>class OvCore::ECS::Components::CReflectionProbe</type>
+                        <data>
+                            <refresh_mode>0</refresh_mode>
+                            <capture_speed>1</capture_speed>
+                            <capture_position>
+                                <x>0</x>
+                                <y>0</y>
+                                <z>0</z>
+                            </capture_position>
+                            <brightness>1</brightness>
+                            <resolution>512</resolution>
+                            <influence_policy>1</influence_policy>
+                            <influence_size>
+                                <x>10</x>
+                                <y>10</y>
+                                <z>10</z>
+                            </influence_size>
+                            <box_projection>false</box_projection>
                         </data>
                     </component>
                 </components>

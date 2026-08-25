@@ -49,7 +49,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>WheelZoom</type>
+                        <type>Scripts/WheelZoom.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -341,7 +341,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>OrbitalRotor</type>
+                        <type>Scripts/OrbitalRotor.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -430,7 +430,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>SceneNavigator</type>
+                        <type>Scripts/SceneNavigator.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>

@@ -28,6 +28,13 @@
             </value>
         </uniform>
         <uniform>
+            <name>u_TextureTiling</name>
+            <value>
+                <x>1</x>
+                <y>1</y>
+            </value>
+        </uniform>
+        <uniform>
             <name>u_DiffuseMap</name>
             <value>1_Sponza\Textures\FX\particle.png</value>
         </uniform>
@@ -36,13 +43,6 @@
             <value>
                 <x>0</x>
                 <y>0</y>
-            </value>
-        </uniform>
-        <uniform>
-            <name>u_TextureTiling</name>
-            <value>
-                <x>1</x>
-                <y>1</y>
             </value>
         </uniform>
     </uniforms>

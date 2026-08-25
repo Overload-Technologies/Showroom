@@ -99,7 +99,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>SimpleFPSController</type>
+                        <type>Scripts/SimpleFPSController.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -1760,7 +1760,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Teleport</type>
+                        <type>Scripts/Teleport.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -2081,7 +2081,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>Teleport</type>
+                        <type>Scripts/Teleport.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -2329,7 +2329,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>SponzaExplorer</type>
+                        <type>Scripts/SponzaExplorer.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>
@@ -2633,7 +2633,7 @@
                 </components>
                 <behaviours>
                     <behaviour>
-                        <type>SceneNavigator</type>
+                        <type>Scripts/SceneNavigator.lua</type>
                         <data/>
                     </behaviour>
                 </behaviours>

@@ -386,14 +386,19 @@
                     <component>
                         <type>class OvCore::ECS::Components::CSkinnedMeshRenderer</type>
                         <data>
-                            <playing>true</playing>
-                            <looping>true</looping>
-                            <playback_speed>1</playback_speed>
                             <mesh_bounds_scale>1.5</mesh_bounds_scale>
                             <pose_eval_rate>60</pose_eval_rate>
-                            <time_ticks>0</time_ticks>
-                            <animation_source>?</animation_source>
-                            <animation>root|run</animation>
+                            <layers>
+                                <layer>
+                                    <animation_source>?</animation_source>
+                                    <animation>root|run</animation>
+                                    <weight>1</weight>
+                                    <playing>true</playing>
+                                    <looping>true</looping>
+                                    <playback_speed>1</playback_speed>
+                                    <time_ticks>0</time_ticks>
+                                </layer>
+                            </layers>
                         </data>
                     </component>
                 </components>
@@ -472,14 +477,19 @@
                     <component>
                         <type>class OvCore::ECS::Components::CSkinnedMeshRenderer</type>
                         <data>
-                            <playing>true</playing>
-                            <looping>true</looping>
-                            <playback_speed>1</playback_speed>
                             <mesh_bounds_scale>1.5</mesh_bounds_scale>
                             <pose_eval_rate>60</pose_eval_rate>
-                            <time_ticks>0</time_ticks>
-                            <animation_source>?</animation_source>
-                            <animation>root|walk</animation>
+                            <layers>
+                                <layer>
+                                    <animation_source>?</animation_source>
+                                    <animation>root|walk</animation>
+                                    <weight>1</weight>
+                                    <playing>true</playing>
+                                    <looping>true</looping>
+                                    <playback_speed>1</playback_speed>
+                                    <time_ticks>0</time_ticks>
+                                </layer>
+                            </layers>
                         </data>
                     </component>
                     <component>
@@ -601,14 +611,19 @@
                     <component>
                         <type>class OvCore::ECS::Components::CSkinnedMeshRenderer</type>
                         <data>
-                            <playing>true</playing>
-                            <looping>true</looping>
-                            <playback_speed>1</playback_speed>
                             <mesh_bounds_scale>1.5</mesh_bounds_scale>
                             <pose_eval_rate>60</pose_eval_rate>
-                            <time_ticks>0</time_ticks>
-                            <animation_source>?</animation_source>
-                            <animation>root|fight_kick</animation>
+                            <layers>
+                                <layer>
+                                    <animation_source>?</animation_source>
+                                    <animation>root|fight_kick</animation>
+                                    <weight>1</weight>
+                                    <playing>true</playing>
+                                    <looping>true</looping>
+                                    <playback_speed>1</playback_speed>
+                                    <time_ticks>0</time_ticks>
+                                </layer>
+                            </layers>
                         </data>
                     </component>
                 </components>
@@ -648,14 +663,19 @@
                     <component>
                         <type>class OvCore::ECS::Components::CSkinnedMeshRenderer</type>
                         <data>
-                            <playing>true</playing>
-                            <looping>true</looping>
-                            <playback_speed>1</playback_speed>
                             <mesh_bounds_scale>1.5</mesh_bounds_scale>
                             <pose_eval_rate>60</pose_eval_rate>
-                            <time_ticks>0</time_ticks>
-                            <animation_source>?</animation_source>
-                            <animation>root|idle</animation>
+                            <layers>
+                                <layer>
+                                    <animation_source>?</animation_source>
+                                    <animation>root|idle</animation>
+                                    <weight>1</weight>
+                                    <playing>true</playing>
+                                    <looping>true</looping>
+                                    <playback_speed>1</playback_speed>
+                                    <time_ticks>0</time_ticks>
+                                </layer>
+                            </layers>
                         </data>
                     </component>
                     <component>
